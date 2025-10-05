@@ -1,5 +1,241 @@
-body{
+:root {
+  --bg: #0b0b0d;
+  --card: #0f1113;
+  --muted: #9aa0a6;
+  --accent: #6ee7b7;
+  --glass: rgba(255, 255, 255, 0.03);
+  --max-width: 1500px; /* Default 110px*/
+  --gap: 1.25rem;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
 
-  background-image: linear-gradient(to left, black, grey);
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+
+}
+
+body {
+  margin :0;
+  background: rgb(19, 19, 26);/*radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem
+}
+
+.name-about {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color:  var(--accent);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  align-items: center;
+  justify-content: left;
+  border: 0;
+  color: var(--muted);
+  font-size: 1.25rem
+}
+
+.nav-icons {
+  width: 48px;
+  height: 48px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  color: var(--accent);
+}
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(20%) blur(1px) contrast(.9);
+  transform: scale(1.04)
+}
+
+.btn {
+  display: inline-block;
+  padding: .575rem 1rem;
+  border-radius: 8px;
+  text-decoration: none
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #042018;
+  font-weight: 600
+}
+
+.btn.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  margin-left: .5rem
+}
+
+.section {
+  padding: 4rem 0;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all .6s cubic-bezier(.2, .9, .2, 1)
+}
+
+.section.reveal {
+  opacity: 1;
+  transform: none
+}
+
+.about-img {
+  /* image me */
+  max-width: 360px;
+
+  border-radius: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.04)
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  margin-top: 1.25rem
+}
+
+.project-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover
+}
+
+.card-body {
+  padding: 1rem
+}
+
+.card-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600
+}
+
+.contact .email {
+  color: var(--accent);
+  font-weight: 600
+}
+
+.muted {
+  color: var(--muted)
+}
+
+.site-footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  margin-top: 2rem
+}
+
+/* Responsive */
+@media(max-width:900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media(max-width:640px) {
+  .nav-toggle {
+    display: inline-block
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 1rem;
+    top: 64px;
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 8px;
+    flex-direction: column;
+    display: none;
+    min-width: 160px
+  }
+
+  .nav-links.open {
+    display: flex
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr
+  }
+
+  .container {
+    padding: 1rem
+  }
+}
+
+/* small helpers */
+.text-center {
+  text-align: center
+}
+
+/* reveal for project cards */
+.project-card {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: all .6s cubic-bezier(.2, .9, .2, 1)
+}
+
+.project-card.reveal {
+  opacity: 1;
+  transform: none
 }
