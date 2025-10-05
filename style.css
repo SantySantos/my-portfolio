@@ -34,11 +34,18 @@ body {
 }
 
 .name-about {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-top: 0.5rem;
   font-weight: 900;
   letter-spacing: -0.02em;
   color:  var(--accent);
+}
+
+.role-about {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 200;
+  color: var(--accent);
 }
 .nav {
   display: flex;
