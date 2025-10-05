@@ -96,8 +96,6 @@ body {
 .nav-icons {
   width: 48px;
   height: 48px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-  color: pink;
 }
 .hero {
   position: relative;
@@ -156,7 +154,7 @@ body {
 
 .general-title {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   color:  #66ffcc;
 }
@@ -198,7 +196,11 @@ body {
   color: #66ffcc;
   font-weight: 600
 }
-
+.phone {
+  color: #66ffcc;
+  font-weight: 600
+  
+}
 .muted {
   color: var(--muted)
 }
