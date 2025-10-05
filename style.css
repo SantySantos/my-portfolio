@@ -38,15 +38,25 @@ body {
   margin-top: 0.5rem;
   font-weight: 900;
   letter-spacing: -0.02em;
-  color:  var(--accent);
+  color:  #66ffcc;
+  
 }
 
 .role-about {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   font-weight: 200;
-  color: var(--accent);
+  color: #66ffcc; 
 }
+
+.description-about {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: pink;
+  font-family: 'Inter', sans-serif;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -56,7 +66,7 @@ body {
 
 .brand {
   font-weight: 700;
-  color: var(--accent);
+  color: #66ffcc;
   text-decoration: none
 }
 
@@ -87,7 +97,7 @@ body {
   width: 48px;
   height: 48px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-  color: var(--accent);
+  color: pink;
 }
 .hero {
   position: relative;
@@ -113,7 +123,7 @@ body {
 }
 
 .btn.primary {
-  background: var(--accent);
+  background: #66ffcc;
   color: #042018;
   font-weight: 600
 }
@@ -144,7 +154,15 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.04)
 }
 
+.general-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color:  #66ffcc;
+}
+
 .projects-grid {
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
@@ -171,13 +189,13 @@ body {
 }
 
 .card-link {
-  color: var(--accent);
+  color: #66ffcc;
   text-decoration: none;
   font-weight: 600
 }
 
 .contact .email {
-  color: var(--accent);
+  color: #66ffcc;
   font-weight: 600
 }
 
@@ -217,7 +235,7 @@ body {
     min-width: 160px
   }
 
-  .nav-links.open {
+  .nav-links.open { 
     display: flex
   }
 
