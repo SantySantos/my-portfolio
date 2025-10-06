@@ -22,7 +22,7 @@ body {
 
 body {
   margin :0;
-  background: rgb(19, 19, 26);/*radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
+  background: #101218;  /* rgb(19, 19, 26);radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
   color: white;
   -webkit-font-smoothing: antialiased;
 }
@@ -38,8 +38,7 @@ body {
   margin-top: 0.5rem;
   font-weight: 900;
   letter-spacing: -0.02em;
-  color:  #66ffcc;
-  
+  color: #66ffcc; 
 }
 
 .role-about {
@@ -53,7 +52,7 @@ body {
   font-size: 1.2rem;
   margin-top: 1rem;
   line-height: 1.6;
-  color: pink;
+  color: #c3daec;
   font-family: 'Inter', sans-serif;
 }
 
@@ -160,7 +159,6 @@ body {
 }
 
 .projects-grid {
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
@@ -169,12 +167,14 @@ body {
 
 .project-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 2px solid rgb(190, 190, 190);
+  /*border: 1px solid rgba(255, 255, 255, 0.04); */
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
+
 
 .project-card img {
   width: 100%;
