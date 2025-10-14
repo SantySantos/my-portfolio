@@ -33,6 +33,16 @@ body {
   padding: 2rem
 }
 
+.container-fluid-tag{
+  margin: 0;
+  color: rgb(141, 141, 141);
+  border-radius: 3px;
+  text-align: left;
+  padding: 2px;
+  font-size: 15px;
+  
+}
+
 .name-about {
   font-size: 3rem;
   margin-top: 0.5rem;
@@ -189,7 +199,11 @@ body {
 .card-link {
   color: #66ffcc;
   text-decoration: none;
-  font-weight: 600
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  
 }
 
 .contact .email {
