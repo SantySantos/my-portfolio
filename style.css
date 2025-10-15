@@ -22,7 +22,7 @@ body {
 
 body {
   margin :0;
-  background: #101218;  /* rgb(19, 19, 26);radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
+  background: #0d1117;  /* rgb(19, 19, 26);radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
   color: white;
   -webkit-font-smoothing: antialiased;
 }
