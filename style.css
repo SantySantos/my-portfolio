@@ -206,8 +206,17 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
+.skills-text{
+
+  display: inline-block;
+}
+
+.font-style-desc{
+    font-weight: lighter;
+}
 
 .project-card img {
   width: 100%;
