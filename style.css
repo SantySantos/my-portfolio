@@ -17,6 +17,8 @@
 html,
 body {
   height: 100%;
+  margin-left: 7rem;
+  margin-right: 7rem;
 
 }
 
@@ -30,7 +32,8 @@ body {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem
+  /* Dynamic horizontal padding: min 1rem, scale with viewport (4vw), max 6rem */
+  padding: 2rem clamp(1rem, 4vw, 6rem);
 }
 
 .container-fluid-tag{
@@ -86,13 +89,14 @@ body {
 
 .onvideo-info{
   position: relative;
-  transform: translateY(-101%);
+  transform: translateY(-99%);
   width: 100%;
   height: 15%;
-  background-color: gray;
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.8;
   margin: 0%;
-  color: black;
+  color: white;
+  font-weight: 25%;
 } 
 
 
