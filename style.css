@@ -17,9 +17,6 @@
 html,
 body {
   height: 100%;
-  margin-left: 7rem;
-  margin-right: 7rem;
-
 }
 
 body {
@@ -135,9 +132,12 @@ body {
 }
 .hero {
   position: relative;
-  min-height: 70vh;
+  /* Ensure hero fits the viewport and leaves room for the header */
+  min-height: calc(100vh - 72px);
+  max-height: 100vh;
   display: flex;
-  align-items: center
+  align-items: center;
+  overflow: hidden;
 }
 
 .hero-bg {
@@ -145,8 +145,41 @@ body {
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: grayscale(20%) blur(1px) contrast(.9);
-  transform: scale(1.04)
+  filter: grayscale(18%) blur(.8px) contrast(.9);
+  transform: none; /* remove extra zoom so background isn't overly cropped */
+}
+
+/* Hero video and content adjustments to avoid over-zooming and ensure content fits */
+.hero-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+  transform: none;
+  filter: grayscale(8%) contrast(.92);
+}
+
+.hero-content{
+  position: relative;
+  padding: clamp(1.2rem, 6vh, 3.5rem) 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-title{
+  font-size: clamp(1.6rem, 5vw, 3rem);
+  margin: .25rem 0 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero-sub{
+  color: var(--muted);
+  margin: .5rem 0 1rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
 }
 
 .btn {
@@ -270,36 +303,83 @@ body {
   }
 }
 
-@media(max-width:640px) {
+@media (max-width: 640px) {
+  /* Mobile: remove horizontal margins/padding so content is full-bleed */
   .nav-toggle {
-    display: inline-block
+    display: inline-block;
   }
 
   .nav-links {
     position: absolute;
-    right: 1rem;
-    top: 64px;
+    right: 0.5rem;
+    top: 56px;
     background: var(--card);
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 8px;
     flex-direction: column;
     display: none;
-    min-width: 160px
+    min-width: 140px;
   }
 
-  .nav-links.open { 
-    display: flex
+  .nav-links.open {
+    display: flex;
   }
 
   .projects-grid {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Remove horizontal padding and margins on small screens. Keep safe-area insets for devices with notches. */
+  body {
+    margin: 0;
+    padding: 0;
   }
 
   .container {
-    padding: 1rem
+    padding: 0;
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+    width: 100%;
+    max-width: 100%;
   }
+
+  /* Reduce vertical spacing so content fits comfortably on small viewports */
+  .hero-content {
+    padding: 1rem 0;
+  }
+
+  .hero-title {
+    font-size: clamp(1.4rem, 6vw, 2.6rem);
+  }
+
+  .hero-sub {
+    margin-bottom: 0.75rem;
+  }
+
+  .section {
+    padding: 1.25rem 0;
+  }
+
+  .project-card {
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
+@media(min-width: 1024px) 
+{
+  .body {
+    margin: 0 7rem;
+  }
+
+}
 /* small helpers */
 .text-center {
   text-align: center
