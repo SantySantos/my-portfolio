@@ -38,6 +38,12 @@ let project_card_role_4 = document.querySelector('.game-role-t4');
 let project_card_description_4 = document.querySelector('.game-description-t4');
 let project_card_intro_4 = document.querySelector('.game-intro-t4');
 
+//Education section
+let education_title = document.querySelector('.education-title');
+let education_place = document.querySelector('.education-place');
+let education_degree = document.querySelector('.education-degree');
+let education_date = document.querySelector('.education-date');
+
 
 function changeLanguage() {
 
@@ -83,6 +89,12 @@ function changeLanguage() {
         project_card_role_4.innerHTML = data.french.stems_from_nothing.project_card_role_4;
         project_card_description_4.innerHTML = data.french.stems_from_nothing.project_card_description_4;
         project_card_intro_4.innerHTML = data.french.stems_from_nothing.project_card_intro_4;
+
+        //Education section
+        education_title.innerHTML = data.french.education.education_title;
+        education_place.innerHTML = data.french.education.education_place;
+        education_degree.innerHTML = data.french.education.education_degree;
+        education_date.innerHTML = data.french.education.education_date;
     } 
     else
     { 
@@ -124,6 +136,12 @@ function changeLanguage() {
         project_card_role_4.innerHTML = data.english.stems_from_nothing.project_card_role_4;
         project_card_description_4.innerHTML = data.english.stems_from_nothing.project_card_description_4;
         project_card_intro_4.innerHTML = data.english.stems_from_nothing.project_card_intro_4;
+
+        //Education section
+        education_title.innerHTML = data.english.education.education_title;
+        education_place.innerHTML = data.english.education.education_place;
+        education_degree.innerHTML = data.english.education.education_degree;
+        education_date.innerHTML = data.english.education.education_date;
     }   
 }
 
@@ -172,6 +190,12 @@ let data = {
         },
 
         //Education section
+        education: {
+            education_title: "Education",
+            education_place: "Collège LaSalle - Montreal, QC",
+            education_degree: "Diploma of College Studies (DEC) in Game Programming",
+            education_date: "August 2023 - Present",      
+        }
        
     },
     french: 
@@ -219,7 +243,12 @@ let data = {
         },
 
         //Education section
- 
+        education: {
+            education_title: "Éducation",
+            education_place: "Collège LaSalle - Montreal, QC",
+            education_degree: "Diplôme d'études collégiales (DEC) en programmation de jeux vidéo",
+            education_date: "Août 2023 - Présent",
+        }
     },
  
 
