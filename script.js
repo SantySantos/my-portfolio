@@ -8,6 +8,7 @@ let description_about_2 = document.querySelector('.da-2');
 
 //projects section
 let project_general_title = document.querySelector('.general-title');
+let image_description = document.querySelector('.img-description');
 //let projects_titles_link = document.querySelector('.t-link');
 
 //Killer Journalist
@@ -74,7 +75,7 @@ function changeLanguage() {
         role.innerHTML = data.french.role;
         description_about_1.innerHTML = data.french.description_about_1;
         description_about_2.innerHTML = data.french.description_about_2;
-
+        image_description.innerHTML = data.french.img_description;
         //projects section
         project_general_title.innerHTML = data.french.project_general_title;
         //projects_titles_link.innerHTML = data.french.projects_titles_link;
@@ -140,7 +141,7 @@ function changeLanguage() {
         role.innerHTML = data.english.role;
         description_about_1.innerHTML = data.english.description_about_1;
         description_about_2.innerHTML = data.english.description_about_2;
-
+        image_description.innerHTML = data.english.img_description;
         //projects section
         project_general_title.innerHTML = data.english.project_general_title;
         //projects_titles_link.innerHTML = data.english.projects_titles_link;
@@ -205,7 +206,7 @@ let data = {
         role: "Gameplay, UI & AI Programmer",
         description_about_1: "I'm a game programming student passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, I also have experience with <strong>Unity</strong> and <strong>C#</strong>.",
         description_about_2: "Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to contribute to a team where <strong> collaboration</strong>, <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish meaningful things. I believe these values are key when facing challenges and building great games.",
-        
+        img_description: "ㆍProblem-Solving ㆍTeamwork ㆍCommunication",
         //projects section
         project_general_title: "Projects",
         projects_titles_link: "View on Itch.io",
@@ -279,7 +280,8 @@ let data = {
         role: "Programmeur gameplay, IU et IA", 
         description_about_1: "Je suis un étudiant en programmation de jeux passionné par les systèmes de <strong>gameplay</strong>, d'<strong>IU</strong> et d'<strong>IA</strong>. Je me spécialise dans <strong>Unreal Engine 5</strong> en utilisant <strong>Blueprints</strong> et <strong>C++</strong>, j'ai également de l'expérience avec <strong>Unity</strong> et <strong>C#</strong>.",
         description_about_2: "Actuellement à la recherche d'un <strong>stage d'été 2026,</strong> je suis impatient de contribuer à une équipe où <strong>la collaboration</strong>, <strong>la communication</strong>, <strong>la discipline</strong> et <strong>la responsabilité</strong> permettent d'accomplir des choses significatives. Je crois que ces valeurs sont essentielles pour relever des défis et créer de grands jeux.",
-        
+        img_description: "ㆍSolution de problèmes ㆍTravail d'équipe ㆍCommunication",
+
         //projects section
         project_general_title: "Projets",
         projects_titles_link: "Revoir sur Itch.io",
