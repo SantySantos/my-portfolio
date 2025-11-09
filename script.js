@@ -55,6 +55,12 @@ let skills_game_engines = document.querySelector('.skills-game-engines');
 let skills_tools = document.querySelector('.skills-tools');
 let skills_spoken_languages = document.querySelector('.skills-spoken-languages');
 
+//contact section
+let contact_title = document.querySelector('.contact-title');
+let email = document.querySelector('.email');
+let phone = document.querySelector('.phone');
+let linkedIn = document.querySelector('.linkedIn');
+
 
 function changeLanguage() {
 
@@ -118,6 +124,13 @@ function changeLanguage() {
         skills_spoken_languages_title.innerHTML = data.french.skills.skills_spoken_languages_title;
         skills_spoken_languages.innerHTML = data.french.skills.skills_spoken_languages;
 
+        //contact section
+        contact_title.innerHTML = data.french.contact.contact_title;
+        email.innerHTML = data.french.contact.email;
+        phone.innerHTML = data.french.contact.phone;
+        linkedIn.innerHTML = data.french.contact.linkedIn;
+
+
     } 
     else
     { 
@@ -176,6 +189,12 @@ function changeLanguage() {
         skills_game_engines.innerHTML = data.english.skills.skills_engines;
         skills_tools.innerHTML = data.english.skills.skills_tools;
         skills_spoken_languages.innerHTML = data.english.skills.skills_spoken_languages;
+
+        //contact section
+        contact_title.innerHTML = data.english.contact.contact_title;
+        email.innerHTML = data.english.contact.email;
+        phone.innerHTML = data.english.contact.phone;
+        linkedIn.innerHTML = data.english.contact.linkedIn;
     }   
 }
 
@@ -242,6 +261,15 @@ let data = {
             skills_tools: "Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.",
             skills_spoken_languages_title: "Spoken Languages:",
             skills_spoken_languages: "French, English and Spanish."
+        },
+
+        
+        //contact section
+        contact: {
+            contact_title: "Contact Me!",
+            email: "Email",
+            phone: "Phone",
+            linkedIn: "Let's Connect!"
         }
 
     },
@@ -308,6 +336,14 @@ let data = {
             skills_tools: "Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.",
             skills_spoken_languages_title: "Langues parlées:",
             skills_spoken_languages: "Français, Anglais et Espagnol."
+        },
+
+        //contact section
+        contact: {
+            contact_title: "Contactez-moi!",
+            email: "Courriel",
+            phone: "Téléphone",
+            linkedIn: "Restons en Contact!"
         }
     },
  
