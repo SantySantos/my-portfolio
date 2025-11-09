@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PermanentMarker:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
+
   </head>
 
   <body>
@@ -42,6 +44,7 @@
         </li>
 
         </ul>
+        <button id="btn-lang" onclick="changeLanguage()">FR</button>
       </nav>
     </header>
 
@@ -51,11 +54,14 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <h2 class="name-about">Santiago Santos</h2>
-            <h4 class="role-about">Gameplay, UI & AI Programmer</h4>
-            <p class="description-about">I'm a game programming student passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, 
+           
+               <h4 class="role-about">Gameplay, UI & AI Programmer</h4>
+            <p class="description-about da-1 ">I'm a game programming student passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, 
               I also have experience with <strong>Unity</strong> and <strong>C#</strong>.</p>
-            <p class="description-about">Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to contribute to a team where <strong> collaboration</strong>,
+            <p class="description-about da-2">Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to contribute to a team where <strong> collaboration</strong>,
               <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish meaningful things. I believe these values are key when facing challenges and building great games.</p>
+            
+          
           </div>
           <div class="col-md-6 text-center about-image-container">
             <img src="images/LinkedInPhoto.jpeg" alt="Portrait" class="about-img" />
@@ -74,26 +80,26 @@
             <video loop autoplay muted src="videos/Killer Journalist - OfficialTrailer VFinal.mp4" alt="Project 1"></video>
             <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
             <div class="card-body">
-              <h3 class="project-card-title">Killer Journalist<span class="container-fluid-tag"> Unreal Engine 5</span></h3>
-              <p>
+              <h3 class="project-card-title t-1">Killer Journalist<span class="container-fluid-tag"> Unreal Engine 5</span></h3>
+              <p class="game-info-t1">
                 <strong>MGD Game Jam 2025 - 1st Place Winner & Best Art
                 </strong>
               </p>
-             
-              <p>Gameplay and UI Programmer</p>   
-              <p>
+
+              <p class="game-role-t1">Gameplay and UI Programmer</p>
+              <p class="game-description-t1">
                 Built in <strong> 48 hours,</strong> Killer Journalist was created in a team of
-                <strong>7 members</strong> with the theme <strong>"Mask"</strong> 
+                <strong>7 members</strong> with the theme <strong>'Mask'</strong> 
                 at The Indie Asylum in Montreal.
               </p>
-              <p>
+              <p class="game-intro-t1">
                 
                 <strong>Killer Journalist </strong> is a narrative puzzle game where the main character
                 is a journalist investigating the case of a dissapeared high profile citizen.
                 The player must mask the truth hidden in the crime scene while discovering
                 the secrets behind the case.
               </p>
-              <a class="card-link" href="https://time-moth.itch.io/killer-journalist" target="_blank">View on itch.io</a>
+              <a class="card-link t-link" href="https://time-moth.itch.io/killer-journalist" target="_blank">View on itch.io</a>
             </div>
           </article>
 
@@ -111,26 +117,26 @@
             </div>
                    
             <div class="card-body">
-              <h3 class="project-card-title">Self Reflection 
+              <h3 class="project-card-title t-2">Self Reflection 
 
                 <span class="container-fluid-tag"> Unreal Engine 5
                 </span></h3>
 
-              <p>
+              <p class="game-info-t2">
                 <strong>3rd Place Winner in the 2025 Behaviour Interactive Game Jam</strong>  
               </p>
-              <p>Gameplay and UI Programmer</p>           
-              <p>
+              <p class="game-role-t2">Gameplay and UI Programmer</p>           
+              <p class="game-description-t2">
                 Built in <strong>under 48 hours,</strong> Self Reflection was created in a team of
-                <strong>7 members</strong> with the theme <strong>"If you can't see it, it doesn't exist!"</strong> 
+                <strong>7 members</strong> with the theme <strong>'If you can't see it, it doesn't exist!'</strong> 
                 at the Behaviour Interactive Studios based In Montreal.
               </p>
-              <p>
-                <strong>Self behaviour</strong> is a game where the protagonist is a depressed man trying to go 
+              <p class="game-intro-t2">
+                <strong>Self Reflection</strong> is a game where the protagonist is a depressed man trying to go 
                 through his day, but as he keeps going, he needs to find himself through mirrors in order 
                 to stay grounded and not lose himself. 
               </p>
-              <a class="card-link" href="https://oneafter68.itch.io/self-reflection" target="_blank" >View on itch.io</a>
+              <a class="card-link t-link" href="https://oneafter68.itch.io/self-reflection" target="_blank" >View on itch.io</a>
             </div>
           </article>
 
@@ -140,23 +146,23 @@
             <video loop autoplay muted src="videos/ScatteredTime.mp4" alt="Project 1"></video>
             <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
             <div class="card-body">
-              <h3 class="project-card-title">Scattered Time <span class="container-fluid-tag"> Unreal Engine 5</span></h3>
-              <p>
+              <h3 class="project-card-title t-3">Scattered Time <span class="container-fluid-tag"> Unreal Engine 5</span></h3>
+              <p class="game-info-t3">
                 <strong>4th Semester Final Project | 3rd Place Winner School Game Jam
                 </strong>
-              <p>AI Programmer and Level Designer</p>   
-              <p>
+              </p>
+              <p class="game-role-t3">AI Programmer and Level Designer</p>   
+              <p class="game-description-t3">
                 Built in <strong> 1 month,</strong> Scattered Time was created in a team of only
-                <strong>3 members</strong> with the theme <strong>"Back to Square One"</strong> 
+                <strong>3 members</strong> with the theme <strong>'Back to Square One'</strong> 
                 at Collège LaSalle in Montreal.
               </p>
-              <p>
-                
+              <p class="game-intro-t3">
                 <strong>Scattered Time </strong> takes place in a maze where everything goes back in time every 60 seconds.
                 The player needs to discover its secrets, collect items to unlock new areas, and find the 8 portal shards
-                to fix time and scape the loop. 
+                to fix time and escape the loop.
               </p>
-              <a class="card-link" href="https://oneafter68.itch.io/scattered-time" target="_blank">View on itch.io</a>
+              <a class="card-link t-link" href="https://oneafter68.itch.io/scattered-time" target="_blank">View on itch.io</a>
             </div>
           </article>
 
@@ -164,25 +170,25 @@
           <article class="card project-card">
             <video loop autoplay muted src="videos/StemsFromNothing.mp4" alt="Project 1"></video>
             <div class="card-body">
-              <h3 class="project-card-title">Stems From Nothing <span class="container-fluid-tag"> Unreal Engine 5</span></h3>
-              <p>
+              <h3 class="project-card-title t-4">Stems From Nothing <span class="container-fluid-tag"> Unreal Engine 5</span></h3>
+              <p class="game-info-t4">
                 <strong>A submission for the Creative Jam 25th edition</strong>
               </p>
-              
-              <p>Gameplay Programmer</p>
-              
-              <p>
+
+              <p class="game-role-t4">Gameplay Programmer</p>
+
+              <p class="game-description-t4">
                 Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of
-                <strong>9 members</strong> with the theme <strong>"Start from nothing"</strong> 
+                <strong>9 members</strong> with the theme <strong>'Start from nothing'</strong> 
                 at NAD School located in Montreal.
               </p>
-              <p>
-                <strong>Stems From Nothing</strong> is a game where the player must navegate in a songwriter mind to be able 
+              <p class="game-intro-t4">
+                <strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter mind to be able 
                 to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical 
-                constraits of: a maximum 5 colors, one level only and one button only. 
+                constraints of: a maximum 5 colors, one level only and one button only. 
               </p>
               <br>
-              <a class="card-link" href="https://roxymarcoux.itch.io/stems-from-nothing" target="_blank">View on itch.io</a>
+              <a class="card-link t-link" href="https://roxymarcoux.itch.io/stems-from-nothing" target="_blank">View on itch.io</a>
             </div>
           </article>
 
@@ -262,6 +268,9 @@
       </section>
     </main>
     
+    <!--my script-->
+    <script src="script.js"></script>
+
     <!--Footer-->
     <footer class="site-footer">
       <div class="container">

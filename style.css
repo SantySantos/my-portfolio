@@ -47,6 +47,21 @@ body {
   scale: calc(1.01);
 }
 
+
+
+#btn-lang{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #66ffcc;
+  background-color: transparent;
+  border: 1px solid #66ffcc;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .name-about {
   font-size: 3rem;
   margin-top: 0.5rem;
