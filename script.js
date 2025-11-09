@@ -44,6 +44,17 @@ let education_place = document.querySelector('.education-place');
 let education_degree = document.querySelector('.education-degree');
 let education_date = document.querySelector('.education-date');
 
+//skills section
+let skills_title = document.querySelector('.skills-title');
+let skills_languages_title = document.querySelector('.skills-languages-title');
+let skills_game_engines_title = document.querySelector('.skills-game-engines-title');
+let skills_tools_title = document.querySelector('.skills-tools-title');
+let skills_spoken_languages_title = document.querySelector('.skills-spoken-languages-title');
+let skills_languages = document.querySelector('.skills-languages');
+let skills_game_engines = document.querySelector('.skills-game-engines');
+let skills_tools = document.querySelector('.skills-tools');
+let skills_spoken_languages = document.querySelector('.skills-spoken-languages');
+
 
 function changeLanguage() {
 
@@ -95,6 +106,18 @@ function changeLanguage() {
         education_place.innerHTML = data.french.education.education_place;
         education_degree.innerHTML = data.french.education.education_degree;
         education_date.innerHTML = data.french.education.education_date;
+
+        //skills section
+        skills_title.innerHTML = data.french.skills.skills_title;
+        skills_languages_title.innerHTML = data.french.skills.skills_languages_title;
+        skills_languages.innerHTML = data.french.skills.skills_languages;
+        skills_game_engines_title.innerHTML = data.french.skills.skills_game_engines_title;
+        skills_game_engines.innerHTML = data.french.skills.skills_engines;
+        skills_tools_title.innerHTML = data.french.skills.skills_tools_title;
+        skills_tools.innerHTML = data.french.skills.skills_tools;
+        skills_spoken_languages_title.innerHTML = data.french.skills.skills_spoken_languages_title;
+        skills_spoken_languages.innerHTML = data.french.skills.skills_spoken_languages;
+
     } 
     else
     { 
@@ -142,6 +165,17 @@ function changeLanguage() {
         education_place.innerHTML = data.english.education.education_place;
         education_degree.innerHTML = data.english.education.education_degree;
         education_date.innerHTML = data.english.education.education_date;
+
+        //skills section
+        skills_title.innerHTML = data.english.skills.skills_title;
+        skills_languages_title.innerHTML = data.english.skills.skills_languages_title;
+        skills_game_engines_title.innerHTML = data.english.skills.skills_game_engines_title;
+        skills_tools_title.innerHTML = data.english.skills.skills_tools_title;
+        skills_spoken_languages_title.innerHTML = data.english.skills.skills_spoken_languages_title;
+        skills_languages.innerHTML = data.english.skills.skills_languages;
+        skills_game_engines.innerHTML = data.english.skills.skills_engines;
+        skills_tools.innerHTML = data.english.skills.skills_tools;
+        skills_spoken_languages.innerHTML = data.english.skills.skills_spoken_languages;
     }   
 }
 
@@ -195,8 +229,21 @@ let data = {
             education_place: "Collège LaSalle - Montreal, QC",
             education_degree: "Diploma of College Studies (DEC) in Game Programming",
             education_date: "August 2023 - Present",      
+        },
+
+        //skills section
+        skills: {
+            skills_title: "Skills",
+            skills_languages_title: "Languages:",
+            skills_languages: "C++, C#, JavaScript, Blueprints, HTML, CSS.",
+            skills_game_engines_title: "Game Engines:",
+            skills_engines: "Unreal Engine, Unity.",
+            skills_tools_title: "Tools:",
+            skills_tools: "Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.",
+            skills_spoken_languages_title: "Spoken Languages:",
+            skills_spoken_languages: "French, English and Spanish."
         }
-       
+
     },
     french: 
     { 
@@ -248,6 +295,19 @@ let data = {
             education_place: "Collège LaSalle - Montreal, QC",
             education_degree: "Diplôme d'études collégiales (DEC) en programmation de jeux vidéo",
             education_date: "Août 2023 - Présent",
+        },
+
+         //skills section
+        skills: {
+            skills_title: "Compétences",
+            skills_languages_title: "Langages:",
+            skills_languages: "C++, C#, JavaScript, Blueprints, HTML, CSS.",
+            skills_game_engines_title: "Moteurs de jeu:",
+            skills_engines: "Unreal Engine, Unity.",
+            skills_tools_title: "Outils:",
+            skills_tools: "Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.",
+            skills_spoken_languages_title: "Langues parlées:",
+            skills_spoken_languages: "Français, Anglais et Espagnol."
         }
     },
  
