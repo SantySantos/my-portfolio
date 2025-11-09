@@ -43,6 +43,10 @@ body {
   
 }
 
+.about-container:hover {
+  scale: calc(1.01);
+}
+
 .name-about {
   font-size: 3rem;
   margin-top: 0.5rem;
@@ -221,6 +225,8 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.04);
 }
 
+
+
 .general-title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -244,6 +250,10 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+.project-card:hover {
+  scale: calc(1.05);
 }
 
 .skills-text{
