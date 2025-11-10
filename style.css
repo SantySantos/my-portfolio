@@ -283,7 +283,11 @@ body {
   z-index: 1000;
   overflow: visible;
 }
-
+.go-to-project-icon{
+  color: #66ffcc;
+  position:relative;
+  right: 5px;
+}
 .general-title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -333,13 +337,16 @@ body {
 }
 
 .card-link {
-  color: #66ffcc;
+  /*color: #66ffcc;*/
+  color: white; 
   text-decoration: none;
   font-weight: 600;
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
-
+  right: 5px;
+  padding-right: 10px;
+  font-size: 30px;
 }
 
 .contact .email {
@@ -415,6 +422,28 @@ body {
   }
 }
 
+.game-card-links{
+  padding: 10px;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 12px;
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.game-card-links-right{
+  padding: 10px;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 12px;
+  flex: 1;
+  align-items: right;
+  padding-right: 40px;
+  text-align: right;
+  padding-top: 15px;
+  
+}
 .game-card {
   padding: 10px;
   border: 1px solid white;
@@ -423,7 +452,7 @@ body {
   flex: 1;
   padding-left: 40px;
   padding-top: 20px;
-
+  margin-bottom: 15px;  
 }
 
 .info-icon {
@@ -431,7 +460,6 @@ body {
   height: 25px;
   margin-right: 8px;
   vertical-align: middle;
-
 }
 
 /* Responsive */
