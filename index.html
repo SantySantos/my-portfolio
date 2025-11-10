@@ -1,216 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Santiago Santos — Game Programmer & Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PermanentMarker:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santiago Santos — Game Programmer & Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PermanentMarker:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="Assets/icon.png">
+  <link rel="stylesheet" href="style.css" />
 
 
-  </head>
+</head>
 
-  <body>
-    <!--Navbar-->
-    <header class="site-header">
-      <nav class="nav container">
-        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-        <ul class="nav-links">
+<body>
+  <!--Navbar-->
+  <header class="site-header">
+    <nav class="nav container">
+
+      <button class="home-button" onclick="location.href='index.html'">
+        <i class="fa-solid fa-house"></i>
+      </button>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
 
         <li><a class="link" href="Assets/SANTIAGO_SANTOS_CV.pdf" target="_blank" title="Resume">
-            <img class="nav-icons" src="images/CVIcon.png" alt="GitHub Image">
+            <i class="fa-solid fa-file-arrow-down my-icons"></i>
           </a>
         </li>
 
-          <li><a class="link" href="https://www.linkedin.com/in/santiagosantos533/" target="_blank" title="LinkedIn">
-            <img class="nav-icons" src="images/LinkedInIccon.png" alt="LinkedIn Image">
-            </a>
-          </li>
-
-          <li><a class="link" href="https://github.com/SantySantos" target="_blank" title="GitHub">
-            <img class="nav-icons" src="images/WhiteGithubIcon.png" alt="GitHub Image"> 
-            </a>        
-          </li>
-
-          <li><a class="link" href="https://santysantos.itch.io/" target="_blank" title="Itch.io">
-            <img class="nav-icons" src="images/ItchioIcon.png" alt="GitHub Image"> 
+        <li><a class="link" href="https://www.linkedin.com/in/santiagosantos533/" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin my-icons"></i>
           </a>
         </li>
 
-        </ul>
-        <button id="btn-lang" onclick="changeLanguage()">FR</button>
-      </nav>
-    </header>
+        <li><a class="link" href="https://github.com/SantySantos" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github my-icons"></i>
+          </a>
+        </li>
 
-    <main>   
-      <!--About-->
-      <section id="about" class="section about container about-container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 class="name-about">Santiago Santos</h2>
-           
-               <h4 class="role-about">Gameplay, UI & AI Programmer</h4>
-            <p class="description-about da-1 ">I'm a game programming student passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, 
-              I also have experience with <strong>Unity</strong> and <strong>C#</strong>.</p>
-            <p class="description-about da-2">Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to contribute to a team where <strong> collaboration</strong>,
-              <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish meaningful things. I believe these values are key when facing challenges and building great games.</p>
-            
-          
-          </div>
-          <div class="col-md-6 text-center about-image-container">
-            <img src="images/LinkedInPhoto.jpeg" alt="Portrait" class="about-img" />
-             <p class="img-description">ㆍProblem-Solving ㆍTeamwork ㆍCommunication</p>
-          </div>
+        <li><a class="link" href="https://santysantos.itch.io/" target="_blank" title="Itch.io">
+            <i class="fa-brands fa-itch-io my-icons"></i> 
+          </a>
+        </li>
+
+      </ul>
+
+      <button id="btn-lang" onclick="changeLanguage()">FR</button>
+
+    </nav>
+  </header>
+
+  <main>
+    <!--About-->
+    <section id="about" class="section about container about-container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="name-about">Santiago Santos</h2>
+
+          <h4 class="role-about">Gameplay, UI & AI Programmer</h4>
+          <p class="description-about da-1 ">I'm a game programming student passionate about <strong> gameplay</strong>,
+            <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using
+            <strong>Blueprints</strong> and <strong>C++</strong>,
+            I also have experience with <strong>Unity</strong> and <strong>C#</strong>.</p>
+          <p class="description-about da-2">Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to
+            contribute to a team where <strong> collaboration</strong>,
+            <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish
+            meaningful things. I believe these values are key when facing challenges and building great games.
+          </p>
+
+
         </div>
-      </section>
+        <div class="col-md-6 text-center about-image-container">
+          <img src="images/LinkedInPhoto.jpeg" alt="Portrait" class="about-img" />
+          <p class="img-description">ㆍProblem-Solving ㆍTeamwork ㆍCommunication</p>
+        </div>
+      </div>
+    </section>
 
-      <!--Projects-->
-      <section id="projects" class="section projects container">
-        <h2 class="general-title">Projects</h2>
+    <!--Projects-->
+    <section id="projects" class="section projects container">
+      <h2 class="general-title">Projects</h2>
 
-        <!--Killer Journalist-->
-            
-        <div class="projects-grid">
+      <!--Killer Journalist-->
+
+      <div class="projects-grid">
         <article class="card project-card">
-            <video loop autoplay muted src="videos/Killer Journalist - OfficialTrailer VFinal.mp4" alt="Project 1"></video>
-            <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
-            <div class="card-body">
-              <h3 class="project-card-title t-1">Killer Journalist<span class="container-fluid-tag"> Unreal Engine 5</span></h3>
-              <p class="game-info-t1">
-                <strong>MGD Game Jam 2025 - 1st Place Winner & Best Art
-                </strong>
-              </p>
+          <video onclick="goToProjects('KillerJournalist.html', 'killer_journalist')" loop autoplay muted
+            src="videos/Killer Journalist - OfficialTrailer VFinal.mp4" alt="Project 1"></video>
+          <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
+          <div class="card-body" onclick="goToProjects('KillerJournalist.html', 'killer_journalist')">
+            <h3 class="project-card-title t-1">Killer Journalist<span class="container-fluid-tag"> Unreal Engine
+                5</span></h3>
+            <p class="game-info-t1">
+              <strong>MGD Game Jam 2025 - 1st Place Winner & Best Art
+              </strong>
+            </p>
 
-              <p class="game-role-t1">Gameplay and UI Programmer</p>
-              <p class="game-description-t1">
-                Built in <strong> 48 hours,</strong> Killer Journalist was created in a team of
-                <strong>7 members</strong> with the theme <strong>'Mask'</strong> 
-                at The Indie Asylum in Montreal.
-              </p>
-              <p class="game-intro-t1">
-                
-                <strong>Killer Journalist </strong> is a narrative puzzle game where the main character
-                is a journalist investigating the case of a dissapeared high profile citizen.
-                The player must mask the truth hidden in the crime scene while discovering
-                the secrets behind the case.
-              </p>
-              <a class="card-link t-link" href="https://time-moth.itch.io/killer-journalist" target="_blank">View on itch.io</a>
-            </div>
-          </article>
+            <p class="game-role-t1">Gameplay and UI Programmer</p>
+            <p class="game-description-t1">
+              Built in <strong> 48 hours,</strong> Killer Journalist was created in a team of
+              <strong>7 members</strong> with the theme <strong>'Mask'</strong>
+              at The Indie Asylum in Montreal.
+            </p>
+            <p class="game-intro-t1">
 
-          
-          <!--Self Reflection-->
-          <article class="card project-card">
-            <div class="video-container">
-              <video loop autoplay muted src="videos/SelfReflection.mp4" class="video-games" alt="Project 1"></video>
-              <!--<div class="onvideo-info">
+              <strong>Killer Journalist </strong> is a narrative puzzle game where the main character
+              is a journalist investigating the case of a dissapeared high profile citizen.
+              The player must mask the truth hidden in the crime scene while discovering
+              the secrets behind the case.
+            </p>
+            <a class="card-link t-link" href="https://time-moth.itch.io/killer-journalist" target="_blank">View on
+              itch.io</a>
+          </div>
+        </article>
+
+
+        <!--Self Reflection-->
+        <article class="card project-card">
+          <div class="video-container">
+            <video onclick="goToProjects('SelfReflection.html', 'self_reflection')" loop autoplay muted src="videos/SelfReflection.mp4" class="video-games" alt="Project 1"></video>
+            <!--<div class="onvideo-info">
                  <div class="onvideo-info"> 
                 Unreal Engine 5 | Blueprints
               </div>
                 -->
-             
-            </div>
-                   
-            <div class="card-body">
-              <h3 class="project-card-title t-2">Self Reflection 
 
-                <span class="container-fluid-tag"> Unreal Engine 5
-                </span></h3>
+          </div>
 
-              <p class="game-info-t2">
-                <strong>3rd Place Winner in the 2025 Behaviour Interactive Game Jam</strong>  
-              </p>
-              <p class="game-role-t2">Gameplay and UI Programmer</p>           
-              <p class="game-description-t2">
-                Built in <strong>under 48 hours,</strong> Self Reflection was created in a team of
-                <strong>7 members</strong> with the theme <strong>'If you can't see it, it doesn't exist!'</strong> 
-                at the Behaviour Interactive Studios based In Montreal.
-              </p>
-              <p class="game-intro-t2">
-                <strong>Self Reflection</strong> is a game where the protagonist is a depressed man trying to go 
-                through his day, but as he keeps going, he needs to find himself through mirrors in order 
-                to stay grounded and not lose himself. 
-              </p>
-              <a class="card-link t-link" href="https://oneafter68.itch.io/self-reflection" target="_blank" >View on itch.io</a>
-            </div>
-          </article>
+          <div class="card-body" onclick="goToProjects('SelfReflection.html', 'self_reflection')">
+            <h3 class="project-card-title t-2">Self Reflection
 
-          
-          <!--Scattered Time-->
-          <article class="card project-card">
-            <video loop autoplay muted src="videos/ScatteredTime.mp4" alt="Project 1"></video>
-            <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
-            <div class="card-body">
-              <h3 class="project-card-title t-3">Scattered Time <span class="container-fluid-tag"> Unreal Engine 5</span></h3>
-              <p class="game-info-t3">
-                <strong>4th Semester Final Project | 3rd Place Winner School Game Jam
-                </strong>
-              </p>
-              <p class="game-role-t3">AI Programmer and Level Designer</p>   
-              <p class="game-description-t3">
-                Built in <strong> 1 month,</strong> Scattered Time was created in a team of only
-                <strong>3 members</strong> with the theme <strong>'Back to Square One'</strong> 
-                at Collège LaSalle in Montreal.
-              </p>
-              <p class="game-intro-t3">
-                <strong>Scattered Time </strong> takes place in a maze where everything goes back in time every 60 seconds.
-                The player needs to discover its secrets, collect items to unlock new areas, and find the 8 portal shards
-                to fix time and escape the loop.
-              </p>
-              <a class="card-link t-link" href="https://oneafter68.itch.io/scattered-time" target="_blank">View on itch.io</a>
-            </div>
-          </article>
+              <span class="container-fluid-tag"> Unreal Engine 5
+              </span>
+            </h3>
 
-          <!--Stems from nothing-->
-          <article class="card project-card">
-            <video loop autoplay muted src="videos/StemsFromNothing.mp4" alt="Project 1"></video>
-            <div class="card-body">
-              <h3 class="project-card-title t-4">Stems From Nothing <span class="container-fluid-tag"> Unreal Engine 5</span></h3>
-              <p class="game-info-t4">
-                <strong>A submission for the Creative Jam 25th edition</strong>
-              </p>
-
-              <p class="game-role-t4">Gameplay Programmer</p>
-
-              <p class="game-description-t4">
-                Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of
-                <strong>9 members</strong> with the theme <strong>'Start from nothing'</strong> 
-                at NAD School located in Montreal.
-              </p>
-              <p class="game-intro-t4">
-                <strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter mind to be able 
-                to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical 
-                constraints of: a maximum 5 colors, one level only and one button only. 
-              </p>
-              <br>
-              <a class="card-link t-link" href="https://roxymarcoux.itch.io/stems-from-nothing" target="_blank">View on itch.io</a>
-            </div>
-          </article>
+            <p class="game-info-t2">
+              <strong>3rd Place Winner in the 2025 Behaviour Interactive Game Jam</strong>
+            </p>
+            <p class="game-role-t2">Gameplay and UI Programmer</p>
+            <p class="game-description-t2">
+              Built in <strong>under 48 hours,</strong> Self Reflection was created in a team of
+              <strong>7 members</strong> with the theme <strong>'If you can't see it, it doesn't exist!'</strong>
+              at the Behaviour Interactive Studios based In Montreal.
+            </p>
+            <p class="game-intro-t2">
+              <strong>Self Reflection</strong> is a game where the protagonist is a depressed man trying to go
+              through his day, but as he keeps going, he needs to find himself through mirrors in order
+              to stay grounded and not lose himself.
+            </p>
+            <a class="card-link t-link" href="https://oneafter68.itch.io/self-reflection" target="_blank">View on
+              itch.io</a>
+          </div>
+        </article>
 
 
-        </div>
-      </section>
+        <!--Scattered Time-->
+        <article class="card project-card">
+          <video onclick="goToProjects('ScatteredTime.html', 'scattered_time')" loop autoplay muted src="videos/ScatteredTime.mp4" alt="Project 1"></video>
+          <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
+          <div class="card-body" onclick="goToProjects('ScatteredTime.html', 'scattered_time')">
+            <h3 class="project-card-title t-3">Scattered Time <span class="container-fluid-tag"> Unreal Engine 5</span>
+            </h3>
+            <p class="game-info-t3">
+              <strong>4th Semester Final Project | 3rd Place Winner School Game Jam
+              </strong>
+            </p>
+            <p class="game-role-t3">AI Programmer and Level Designer</p>
+            <p class="game-description-t3">
+              Built in <strong> 1 month,</strong> Scattered Time was created in a team of only
+              <strong>3 members</strong> with the theme <strong>'Back to Square One'</strong>
+              at Collège LaSalle in Montreal.
+            </p>
+            <p class="game-intro-t3">
+              <strong>Scattered Time </strong> takes place in a maze where everything goes back in time every 60
+              seconds.
+              The player needs to discover its secrets, collect items to unlock new areas, and find the 8 portal shards
+              to fix time and escape the loop.
+            </p>
+            <a class="card-link t-link" href="https://oneafter68.itch.io/scattered-time" target="_blank">View on
+              itch.io</a>
+          </div>
+        </article>
+
+        <!--Stems from nothing-->
+        <article class="card project-card">
+          <video onclick="goToProjects('StemsFromNothing.html', 'stems_from_nothing')" loop autoplay muted src="videos/StemsFromNothing.mp4" alt="Project 1"></video>
+          <div class="card-body" onclick="goToProjects('StemsFromNothing.html', 'stems_from_nothing')">
+            <h3 class="project-card-title t-4">Stems From Nothing <span class="container-fluid-tag"> Unreal Engine
+                5</span></h3>
+            <p class="game-info-t4">
+              <strong>A submission for the Creative Jam 25th edition</strong>
+            </p>
+
+            <p class="game-role-t4">Gameplay Programmer</p>
+
+            <p class="game-description-t4">
+              Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of
+              <strong>9 members</strong> with the theme <strong>'Start from nothing'</strong>
+              at NAD School located in Montreal.
+            </p>
+            <p class="game-intro-t4">
+              <strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter mind to be
+              able
+              to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical
+              constraints of: a maximum 5 colors, one level only and one button only.
+            </p>
+            <br>
+            <a class="card-link t-link" href="https://roxymarcoux.itch.io/stems-from-nothing" target="_blank">View on
+              itch.io</a>
+          </div>
+        </article>
 
 
-      <!--Education-->
-      <section id="education" class="section education container">
-        <h2 class="general-title education-title">Education</h2>
-        <div class="projects-grid">
-          <article class="card project-card">   
-            <div class="card-body">
-              <h3 class="education-place">Collège LaSalle - Montreal, QC</h3>
-              <p class="education-degree">Diploma of College Studies (DEC) in Game Programming</p>
-              <p class="education-date">August 2023 - Present</p>
+      </div>
+    </section>
 
-            </div>
-          </article>
-          <!--
+
+    <!--Education-->
+    <section id="education" class="section education container">
+      <h2 class="general-title education-title">Education</h2>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="card-body">
+            <h3 class="education-place">Collège LaSalle - Montreal, QC</h3>
+            <p class="education-degree">Diploma of College Studies (DEC) in Game Programming</p>
+            <p class="education-date">August 2023 - Present</p>
+
+          </div>
+        </article>
+        <!--
           <article class="card project-card">          
             <div class="card-body">
               <h3>Virrey Solis High School</h3>
@@ -222,67 +250,74 @@
           </article>
           -->
 
-          <br>
-          <br>
-          </section>
+        <br>
+        <br>
+    </section>
 
 
-          <!--Skills-->
-      <section id="skills" class="section skills container">
+    <!--Skills-->
+    <section id="skills" class="section skills container">
 
-        <h2 class="general-title skills-title">Skills</h2> 
+      <h2 class="general-title skills-title">Skills</h2>
 
-          <article class="card project-card">
-            <div class="card-body">
-              <h3 class="skills-text skills-languages-title"><strong>Languages: </strong></h3><span> </span><h3 class="skills-text font-style-desc skills-languages" > C++, C#, JavaScript, Blueprints, HTML, CSS. </h3>
-            </div>
-          </article>
-
-           <article class="card project-card">   
-            <div class="card-body">
-              <h3 class="skills-text skills-game-engines-title"><strong>Game Engines: </strong></h3><span> </span><h3 class="skills-text font-style-desc skills-game-engines" >Unreal Engine, Unity.</h3>
-            </div>
-          </article>
-
-             <article class="card project-card">   
-            <div class="card-body">
-              <h3 class="skills-text skills-tools-title"><strong>Tools: </strong></h3><span> </span><h3 class="skills-text font-style-desc  skills-tools" >Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.</h3>
-            </div>
-          </article>
-
-            <article class="card project-card">   
-            <div class="card-body">
-              <h3 class="skills-text skills-spoken-languages-title"><strong>Spoken Languages: </strong></h3><span> </span><h3 class="skills-text font-style-desc skills-spoken-languages" >French, English and Spanish.</h3>
-            </div>
-          </article>
-
+      <article class="card project-card">
+        <div class="card-body">
+          <h3 class="skills-text skills-languages-title"><strong>Languages: </strong></h3><span> </span>
+          <h3 class="skills-text font-style-desc skills-languages"> C++, C#, JavaScript, Blueprints, HTML, CSS. </h3>
         </div>
-      </section>
-      
-      <!--Contact-->
-      </section>
-        <section id="contact" class="section contact container">
-        <h2 class="general-title contact-title">Contact Me!</h2>
-        <div class="projects-grid">
-          <article class="card project-card">   
-            <div class="card-body">
-              <h3 class="email" style="color: white;">Email</h3>
-              <p><a href="mailto:santysantos533@gmail.com" class="email" target="_blank" title="Email">santysantos533@gmail.com</a></p>
-            </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-body">
+          <h3 class="skills-text skills-game-engines-title"><strong>Game Engines: </strong></h3><span> </span>
+          <h3 class="skills-text font-style-desc skills-game-engines">Unreal Engine, Unity.</h3>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-body">
+          <h3 class="skills-text skills-tools-title"><strong>Tools: </strong></h3><span> </span>
+          <h3 class="skills-text font-style-desc  skills-tools">Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual
+            Studio Community, IntelliJ.</h3>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-body">
+          <h3 class="skills-text skills-spoken-languages-title"><strong>Spoken Languages: </strong></h3><span> </span>
+          <h3 class="skills-text font-style-desc skills-spoken-languages">French, English and Spanish.</h3>
+        </div>
+      </article>
+
+      </div>
+    </section>
+
+    <!--Contact-->
+    </section>
+    <section id="contact" class="section contact container">
+      <h2 class="general-title contact-title">Contact Me!</h2>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="card-body">
+            <h3 class="email" style="color: white;">Email</h3>
+            <p><a href="mailto:santysantos533@gmail.com" class="email" target="_blank"
+                title="Email">santysantos533@gmail.com</a></p>
+          </div>
         </article>
         <article class="card project-card">
-            <div class="card-body">
-              <h3 class="phone" style="color: white;">Phone</h3>
-              <p class="phone"> <u>+1(514) 562-8032</u></p>
-            </div>
+          <div class="card-body">
+            <h3 class="phone" style="color: white;">Phone</h3>
+            <p class="phone"> <u>+1(514) 562-8032</u></p>
+          </div>
         </article>
-         <article class="card project-card">
-            <div class="card-body">
-              <h3 class="linkedIn">Let's Connect!</h3>
-              <p><a class="link" href="https://www.linkedin.com/in/santiagosantos533/" target="_blank" title="LinkedIn" style="color: #66ffcc;">LinkedIn</a></p>
-            </div>
+        <article class="card project-card">
+          <div class="card-body">
+            <h3 class="linkedIn">Let's Connect!</h3>
+            <p><a class="link" href="https://www.linkedin.com/in/santiagosantos533/" target="_blank" title="LinkedIn"
+                style="color: #66ffcc;">LinkedIn</a></p>
+          </div>
         </article>
-      </section>
+    </section>
 
     <!--my script-->
     <script src="script.js"></script>
@@ -332,7 +367,7 @@
       reveals.forEach(r => observer.observe(r));
 
       // Attempt to play hero background video and fall back to image on failure
-      (function handleHeroVideo(){
+      (function handleHeroVideo() {
         const video = document.querySelector('.hero-video');
         const bg = document.querySelector('.hero-bg');
         if (!video) return;
@@ -364,5 +399,6 @@
         }
       })();
     </script>
-  </body>
+</body>
+
 </html>

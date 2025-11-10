@@ -4,7 +4,8 @@
   --muted: #9aa0a6;
   --accent: #6ee7b7;
   --glass: rgba(255, 255, 255, 0.03);
-  --max-width: 1500px; /* Default 110px*/
+  --max-width: 1500px;
+  /* Default 110px*/
   --gap: 1.25rem;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
@@ -20,12 +21,35 @@ body {
 }
 
 body {
-  margin :0;
-  background: #0d1117;  /* rgb(19, 19, 26);radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
+  margin: 0;
+  background: #0d1117;
+  /* rgb(19, 19, 26);radial-gradient(1200px 600px at 10% 10%, rgba(110, 231, 183, 0.04), transparent), var(--bg);*/
   color: white;
   -webkit-font-smoothing: antialiased;
 }
 
+.home-button{
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  color: #66ffcc;
+  background-color: transparent;
+  border: 1px solid #66ffcc;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.my-icons{
+  color: #66ffcc;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 45px;
+  gap: 10px;
+}
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -33,23 +57,21 @@ body {
   padding: 2rem clamp(1rem, 4vw, 6rem);
 }
 
-.container-fluid-tag{
+.container-fluid-tag {
   margin: 0;
   color: rgb(141, 141, 141);
   border-radius: 3px;
   text-align: left;
   padding: 2px;
   font-size: 15px;
-  
+
 }
 
 .about-container:hover {
   scale: calc(1.01);
 }
 
-
-
-#btn-lang{
+#btn-lang {
   position: absolute;
   top: 1rem;
   right: 2rem;
@@ -62,7 +84,7 @@ body {
   font-weight: 600;
 }
 
-.img-description{
+.img-description {
   margin-top: 0.5rem;
   font-size: 1.1rem;
   color: #c3daec;
@@ -74,14 +96,14 @@ body {
   margin-top: 0.5rem;
   font-weight: 900;
   letter-spacing: -0.02em;
-  color: #66ffcc; 
+  color: #66ffcc;
 }
 
 .role-about {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   font-weight: 200;
-  color: #66ffcc; 
+  color: #66ffcc;
 }
 
 .description-about {
@@ -93,7 +115,7 @@ body {
 }
 
 .nav {
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,18 +123,18 @@ body {
   z-index: 1000;
 }
 
-.video-container{
+.video-container {
   position: relative;
   display: inline-block;
 }
 
-.video-games{
+.video-games {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.onvideo-info{
+.onvideo-info {
   position: relative;
   transform: translateY(-99%);
   width: 100%;
@@ -122,7 +144,7 @@ body {
   margin: 0%;
   color: white;
   font-weight: 25%;
-} 
+}
 
 
 .brand {
@@ -158,6 +180,7 @@ body {
   width: 48px;
   height: 48px;
 }
+
 .hero {
   position: relative;
   /* Ensure hero fits the viewport and leaves room for the header */
@@ -174,11 +197,12 @@ body {
   background-size: cover;
   background-position: center;
   filter: grayscale(18%) blur(.8px) contrast(.9);
-  transform: none; /* remove extra zoom so background isn't overly cropped */
+  transform: none;
+  /* remove extra zoom so background isn't overly cropped */
 }
 
 /* Hero video and content adjustments to avoid over-zooming and ensure content fits */
-.hero-video{
+.hero-video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -190,21 +214,21 @@ body {
   filter: grayscale(8%) contrast(.92);
 }
 
-.hero-content{
+.hero-content {
   position: relative;
   padding: clamp(1.2rem, 6vh, 3.5rem) 0;
   text-align: center;
   z-index: 2;
 }
 
-.hero-title{
+.hero-title {
   font-size: clamp(1.6rem, 5vw, 3rem);
   margin: .25rem 0 0;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
-.hero-sub{
+.hero-sub {
   color: var(--muted);
   margin: .5rem 0 1rem;
   font-size: clamp(0.95rem, 1.8vw, 1.15rem);
@@ -249,10 +273,10 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.04);
 }
 
-.site-header{
+.site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.02);
   background-color: transparent;
-  backdrop-filter:blur(10px);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -263,7 +287,7 @@ body {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color:  #66ffcc;
+  color: #66ffcc;
 }
 
 .projects-grid {
@@ -288,13 +312,13 @@ body {
   scale: calc(1.05);
 }
 
-.skills-text{
+.skills-text {
 
   display: inline-block;
 }
 
-.font-style-desc{
-    font-weight: lighter;
+.font-style-desc {
+  font-weight: lighter;
 }
 
 .project-card img {
@@ -314,18 +338,19 @@ body {
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
-  
+
 }
 
 .contact .email {
   color: #66ffcc;
   font-weight: 600
 }
+
 .phone {
   color: #66ffcc;
   font-weight: 600
-  
 }
+
 .muted {
   color: var(--muted)
 }
@@ -338,6 +363,66 @@ body {
   margin-top: 2rem
 }
 
+
+
+
+/* Projects Section */
+.projects-main-container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+#main-video {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.video-title {
+  padding-top: 10px;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.video-description-grid{
+  margin-top: -10px;
+  display: grid;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;   
+}
+
+.game-card {
+  padding: 10px;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 12px;
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.info-icon{
+  width: 30px;   
+  height: 25px;
+  margin-right: 8px; 
+  vertical-align: middle; 
+
+}
+
 /* Responsive */
 @media(max-width:900px) {
   .projects-grid {
@@ -346,6 +431,7 @@ body {
 }
 
 @media (max-width: 640px) {
+
   /* Mobile: remove horizontal margins/padding so content is full-bleed */
   .nav-toggle {
     display: inline-block;
@@ -415,13 +501,13 @@ body {
 
 }
 
-@media(min-width: 1024px) 
-{
+@media(min-width: 1024px) {
   .body {
     margin: 0 7rem;
   }
 
 }
+
 /* small helpers */
 .text-center {
   text-align: center
