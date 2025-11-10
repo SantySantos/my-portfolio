@@ -28,7 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.home-button{
+.home-button {
   position: absolute;
   top: 1rem;
   left: 2rem;
@@ -42,7 +42,7 @@ body {
 }
 
 
-.my-icons{
+.my-icons {
   color: #66ffcc;
   background-color: transparent;
   border-radius: 5px;
@@ -50,6 +50,7 @@ body {
   font-size: 45px;
   gap: 10px;
 }
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -368,6 +369,8 @@ body {
 
 /* Projects Section */
 .projects-main-container {
+  display: grid;
+
   position: relative;
   align-items: center;
   justify-content: center;
@@ -394,15 +397,22 @@ body {
   font-weight: 600;
 }
 
-.video-description-grid{
+.video-description-grid {
   margin-top: -10px;
-  display: grid;
+  display: block;
   margin-top: 20px;
   color: white;
   font-size: 1.2rem;
   line-height: 1.6;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;   
+  gap: 20px;
+
+}
+
+@media (min-width: 900px) {
+  .video-description-grid {
+    display: grid;
+  }
 }
 
 .game-card {
@@ -413,13 +423,14 @@ body {
   flex: 1;
   padding-left: 40px;
   padding-top: 20px;
+
 }
 
-.info-icon{
-  width: 30px;   
+.info-icon {
+  width: 30px;
   height: 25px;
-  margin-right: 8px; 
-  vertical-align: middle; 
+  margin-right: 8px;
+  vertical-align: middle;
 
 }
 
