@@ -499,8 +499,8 @@ body {
 
   /* Remove horizontal padding and margins on small screens. Keep safe-area insets for devices with notches. */
   body {
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
   }
 
   .container {
