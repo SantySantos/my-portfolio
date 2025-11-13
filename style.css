@@ -72,6 +72,20 @@ body {
   scale: calc(1.01);
 }
 
+/*Debbuging */
+
+
+.about-content{
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-container{
+  width: auto;
+}
+
+/* end debbuging */
+
 #btn-lang {
   position: absolute;
   top: 1rem;
@@ -453,6 +467,8 @@ body {
   padding-left: 40px;
   padding-top: 20px;
   margin-bottom: 15px;  
+  padding-right: 40px;
+  text-align: justify;
 }
 
 .info-icon {
