@@ -432,6 +432,14 @@ function goToProjects(webpage, id) {
         case 'stems_from_nothing':
             window.location.href = webpage;
             break;
+
+        case 'lavender_biome':
+            window.location.href = webpage;
+            break;
+
+        case 'solar_system_simulation':
+            window.location.href = webpage;
+            break
     }
 }
 
