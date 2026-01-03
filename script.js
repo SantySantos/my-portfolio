@@ -39,6 +39,27 @@ let project_card_role_4 = document.querySelector('.game-role-t4');
 let project_card_description_4 = document.querySelector('.game-description-t4');
 let project_card_intro_4 = document.querySelector('.game-intro-t4');
 
+//Lavender Biome
+let project_card_title_5 = document.querySelector('.t-5');
+let project_card_info_5 = document.querySelector('.game-info-t5');
+let project_card_role_5 = document.querySelector('.game-role-t5');
+let project_card_description_5 = document.querySelector('.game-description-t5');
+let project_card_intro_5 = document.querySelector('.game-intro-t5');
+
+//Solar System Simulation
+let project_card_title_6 = document.querySelector('.t-6');
+let project_card_info_6 = document.querySelector('.game-info-t6');
+let project_card_role_6 = document.querySelector('.game-role-t6');
+let project_card_description_6 = document.querySelector('.game-description-t6');
+let project_card_intro_6 = document.querySelector('.game-intro-t6');
+
+//Living Gun
+let project_card_title_7 = document.querySelector('.t-7');
+let project_card_info_7 = document.querySelector('.game-info-t7');
+let project_card_role_7 = document.querySelector('.game-role-t7');
+let project_card_description_7 = document.querySelector('.game-description-t7');
+let project_card_intro_7 = document.querySelector('.game-intro-t7');
+
 //Education section
 let education_title = document.querySelector('.education-title');
 let education_place = document.querySelector('.education-place');
@@ -107,6 +128,27 @@ function changeLanguage() {
         project_card_description_4.innerHTML = data_langs.french.stems_from_nothing.project_card_description_4;
         project_card_intro_4.innerHTML = data_langs.french.stems_from_nothing.project_card_intro_4;
 
+        //Lavender Biome
+        project_card_title_5.innerHTML = data_langs.french.lavender_biome.project_card_title_5;
+        project_card_info_5.innerHTML = data_langs.french.lavender_biome.project_card_info_5;
+        project_card_role_5.innerHTML = data_langs.french.lavender_biome.project_card_role_5;
+        project_card_description_5.innerHTML = data_langs.french.lavender_biome.project_card_description_5;
+        project_card_intro_5.innerHTML = data_langs.french.lavender_biome.project_card_intro_5;
+
+        //Solar System Simulation
+        project_card_title_6.innerHTML = data_langs.french.solar_system_simulation.project_card_title_6;
+        project_card_info_6.innerHTML = data_langs.french.solar_system_simulation.project_card_info_6;
+        project_card_role_6.innerHTML = data_langs.french.solar_system_simulation.project_card_role_6;
+        project_card_description_6.innerHTML = data_langs.french.solar_system_simulation.project_card_description_6;
+        project_card_intro_6.innerHTML = data_langs.french.solar_system_simulation.project_card_intro_6;
+        
+        //Living Gun
+        project_card_title_7.innerHTML = data_langs.french.living_gun.project_card_title_7;
+        project_card_info_7.innerHTML = data_langs.french.living_gun.project_card_info_7;
+        project_card_role_7.innerHTML = data_langs.french.living_gun.project_card_role_7;
+        project_card_description_7.innerHTML = data_langs.french.living_gun.project_card_description_7;
+        project_card_intro_7.innerHTML = data_langs.french.living_gun.project_card_intro_7;
+
         //Education section
         education_title.innerHTML = data_langs.french.education.education_title;
         education_place.innerHTML = data_langs.french.education.education_place;
@@ -171,6 +213,28 @@ function changeLanguage() {
         project_card_role_4.innerHTML = data_langs.english.stems_from_nothing.project_card_role_4;
         project_card_description_4.innerHTML = data_langs.english.stems_from_nothing.project_card_description_4;
         project_card_intro_4.innerHTML = data_langs.english.stems_from_nothing.project_card_intro_4;
+
+        //Lavender Biome
+        project_card_title_5.innerHTML = data_langs.english.lavender_biome.project_card_title_5;
+        project_card_info_5.innerHTML = data_langs.english.lavender_biome.project_card_info_5;
+        project_card_role_5.innerHTML = data_langs.english.lavender_biome.project_card_role_5;
+        project_card_description_5.innerHTML = data_langs.english.lavender_biome.project_card_description_5;
+        project_card_intro_5.innerHTML = data_langs.english.lavender_biome.project_card_intro_5;
+
+        //Solar System Simulation
+        project_card_title_6.innerHTML = data_langs.english.solar_system_simulation.project_card_title_6;
+        project_card_info_6.innerHTML = data_langs.english.solar_system_simulation.project_card_info_6;
+        project_card_role_6.innerHTML = data_langs.english.solar_system_simulation.project_card_role_6;
+        project_card_description_6.innerHTML = data_langs.english.solar_system_simulation.project_card_description_6;
+        project_card_intro_6.innerHTML = data_langs.english.solar_system_simulation.project_card_intro_6;
+
+        //Living Gun
+        project_card_title_7.innerHTML = data_langs.english.living_gun.project_card_title_7;
+        project_card_info_7.innerHTML = data_langs.english.living_gun.project_card_info_7;
+        project_card_role_7.innerHTML = data_langs.english.living_gun.project_card_role_7;
+        project_card_description_7.innerHTML = data_langs.english.living_gun.project_card_description_7;
+        project_card_intro_7.innerHTML = data_langs.english.living_gun.project_card_intro_7;
+
 
         //Education section
         education_title.innerHTML = data_langs.english.education.education_title;
@@ -240,6 +304,32 @@ let data_langs = {
             project_card_description_4: "Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of<strong>9 members</strong> with the theme <strong>'Start from nothing'</strong> at NAD School located in Montreal.",
             project_card_intro_4: "<strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter mind to be able to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical constraints of: a maximum 5 colors, one level only and one button only.",
         },
+
+        lavender_biome: {
+            project_card_title_5: "Lavender Biome",
+            project_card_info_5: "<strong>A project using Design Patterns and OOP in a real, working systems </strong>",
+            project_card_role_5: "Programmer",
+            project_card_description_5: "Built as a<strong> learning-focused</strong> project, this Minecraft mod was developed to explore and apply <strong>Design Patterns</strong> within an existing codebase for my Advanced Databases class.",
+            project_card_intro_5: "This mod extends Minecraft gameplay by adding custom tools, blocks, ores, foods, recipes, a custom <strong> Lavender Biome</strong> and <strong>Procedural Generation</strong> with an emphasis on clean architecture, scalability, and maintainable code.",
+        },
+
+        solar_system_simulation: {
+            project_card_title_6: "Solar System Simulation",
+            project_card_info_6: "<strong>A project to practice JavaScript, Math, 3D graphics programming, and asset loading in Three.js</strong>",
+            project_card_role_6: "Programmer",
+            project_card_description_6: "Built as a <strong>learning-focused</strong> project, this solar system simulation was developed to explore and apply <strong>Math modeling, and real-time rendering with ThreeJS and CSS </strong>.",
+            project_card_intro_6: "This <strong>Solar System Simulation</strong> includes accurate planetary <strong>orbits, rotations, scales, ellipses</strong> and <strong>orbital speeds</strong> trying to simulate <strong>reality</strong> as we know it. It allows you to freely navigate the 3D space and observe planetary motions over time.  ",
+        },
+
+        living_gun: {
+            project_card_title_7: "Living Gun",
+            project_card_info_7: "<strong>Top 3 rows most popular games in a Game Jam with over 1.700+ entries</strong>",
+            project_card_role_7: "AI and Gameplay Programmer",
+            project_card_description_7: "Built during a <strong>2-week-long</strong> online Game Jam, Living Gun was made in a team of <strong>5 members </strong> with the theme of <strong>'You Are the Weapon'</strong>.",
+            project_card_intro_7: "<strong>Living Gun</strong> is a <strong>2D shooter game</strong> where the player is a weapon that transforms into <strong>4 different guns</strong>, each with unique characteristics and firing modes. The player must strategically switch between guns to defeat <strong>the bosses</strong> in each level and <strong>upgrade the guns</strong>. ",
+        },
+
+
 
         //Education section
         education: {
@@ -312,9 +402,33 @@ let data_langs = {
         stems_from_nothing: {
             project_card_title_4: "Stems From Nothing",
             project_card_info_4: "<strong>Une soumission pour la 25e édition du Creative Jam</strong>",
-            project_card_role_4: "Programmeur gameplay",
+            project_card_role_4: "Programmeur",
             project_card_description_4: "Créé en <strong>moins de 46 heures,</strong> Stems From Nothing a été développé par une équipe de <strong>9 membres</strong> sur le thème <strong>'Partir de rien'</strong> à l'école NAD située à Montréal.",
             project_card_intro_4: "<strong>Stems From Nothing</strong> est un jeu dans lequel le joueur doit naviguer dans l'esprit d'un compositeur afin de pouvoir composer de la musique tout en évitant les obstacles liés au blocage mental. Stems From Nothing répond aux contraintes techniques suivantes : 5 couleurs maximum, un seul niveau et un seul bouton.",
+        },
+
+        lavender_biome: {
+            project_card_title_5: "Biome Lavande",
+            project_card_info_5: "<strong>Un projet utilisant les Design Patterns et la POO dans des systèmes réels et fonctionnels </strong>",
+            project_card_role_5: "Programmeur",
+            project_card_description_5: "Construit comme un projet <strong>axé sur l'apprentissage</strong>, ce mod Minecraft a été développé pour explorer et appliquer les <strong>Design Patterns</strong> dans une base de code existante pour mon cours de bases de données avancées.",
+            project_card_intro_5: "Ce mod étend le gameplay de Minecraft en ajoutant des outils, des blocs, des minerais, des aliments, des recettes personnalisés, un <strong>biome Lavande</strong> personnalisé et une <strong>génération procédurale</strong> avec un accent sur une architecture propre, la scalabilité et un code maintenable.",
+        },
+
+        solar_system_simulation: {
+            project_card_title_6: "Simulation du Système Solaire",
+            project_card_info_6: "<strong>Un projet pour pratiquer JavaScript, les mathématiques, la programmation graphique 3D et le chargement d'actifs dans Three.js</strong>",
+            project_card_role_6: "Programmeur",
+            project_card_description_6: "Construit comme un projet <strong>axé sur l'apprentissage</strong>, cette simulation du système solaire a été développée pour explorer et appliquer la <strong>modélisation mathématique et le rendu en temps réel avec ThreeJS et CSS</strong>.",
+            project_card_intro_6: "Cette <strong>simulation du système solaire</strong> inclut des <strong>orbites, rotations, échelles, ellipses</strong> et <strong>vitesses orbitales</strong> précises essayant de simuler la <strong>réalité</strong> telle que nous la connaissons. Elle permet de naviguer librement dans l'espace 3D et d'observer les mouvements planétaires au fil du temps.  ",
+        },
+
+        living_gun: {
+            project_card_title_7: "Living Gun",
+            project_card_info_7: "<strong>Top 3 des jeux les plus populaires dans un Game Jam avec plus de 1.700 entrées</strong>",
+            project_card_role_7: "IA et Programmeur",
+            project_card_description_7: "Construit lors d'un Game Jam en ligne de <strong>2 semaines</strong>, Living Gun a été réalisé en équipe de <strong>5 membres</strong> avec pour thème <strong>'You Are the Weapon'</strong>.",
+            project_card_intro_7: "<strong>Living Gun</strong> est un <strong>jeu de tir 2D</strong> où le joueur est une arme qui se transforme en <strong>4 armes différentes</strong>, chacune avec des caractéristiques et des modes de tir uniques. Le joueur doit changer stratégiquement d'armes pour vaincre <strong>les boss</strong> de chaque niveau et <strong>améliorer les armes</strong>. ",
         },
 
         //Education section
@@ -439,7 +553,11 @@ function goToProjects(webpage, id) {
 
         case 'solar_system_simulation':
             window.location.href = webpage;
-            break
+            break;
+
+        case 'living_gun':
+            window.location.href = webpage;
+            break;
     }
 }
 
