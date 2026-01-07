@@ -311,7 +311,7 @@ let data_langs = {
             project_card_title_4: "Stems From Nothing",
             project_card_info_4: "<strong>Une soumission pour la 25e édition du Creative Jam</strong>",
             project_card_role_4: "Gameplay Programmer",
-            project_card_description_4: "Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of<strong>9 members</strong> with the theme <strong>'Start from nothing'</strong> at NAD School located in Montreal.",
+            project_card_description_4: "Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of <strong>9 members</strong> with the theme <strong>'Start from nothing'</strong> at NAD School located in Montreal.",
             project_card_intro_4: "<strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter mind to be able to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical constraints of: a maximum 5 colors, one level only and one button only.",
         },
 
