@@ -68,13 +68,17 @@ let education_date = document.querySelector('.education-date');
 
 //skills section
 let skills_title = document.querySelector('.skills-title');
+
 let skills_languages_title = document.querySelector('.skills-languages-title');
-let skills_game_engines_title = document.querySelector('.skills-game-engines-title');
 let skills_tools_title = document.querySelector('.skills-tools-title');
+let skills_frameworks_title = document.querySelector('.skills-frameworks-title');
+let skills_soft_skills_title = document.querySelector('.skills-soft-skills-title');
 let skills_spoken_languages_title = document.querySelector('.skills-spoken-languages-title');
+    
 let skills_languages = document.querySelector('.skills-languages');
-let skills_game_engines = document.querySelector('.skills-game-engines');
 let skills_tools = document.querySelector('.skills-tools');
+let skills_frameworks = document.querySelector('.skills-frameworks');
+let skills_soft_skills = document.querySelector('.skills-soft-skills');
 let skills_spoken_languages = document.querySelector('.skills-spoken-languages');
 
 //contact section
@@ -95,7 +99,7 @@ function changeLanguage() {
         role.innerHTML = data_langs.french.role;
         description_about_1.innerHTML = data_langs.french.description_about_1;
         description_about_2.innerHTML = data_langs.french.description_about_2;
-        image_description.innerHTML = data_langs.french.img_description;
+       // image_description.innerHTML = data_langs.french.img_description;
         //projects section
         project_general_title.innerHTML = data_langs.french.project_general_title;
         //projects_titles_link.innerHTML = data.french.projects_titles_link;
@@ -159,12 +163,15 @@ function changeLanguage() {
         skills_title.innerHTML = data_langs.french.skills.skills_title;
         skills_languages_title.innerHTML = data_langs.french.skills.skills_languages_title;
         skills_languages.innerHTML = data_langs.french.skills.skills_languages;
-        skills_game_engines_title.innerHTML = data_langs.french.skills.skills_game_engines_title;
-        skills_game_engines.innerHTML = data_langs.french.skills.skills_engines;
         skills_tools_title.innerHTML = data_langs.french.skills.skills_tools_title;
         skills_tools.innerHTML = data_langs.french.skills.skills_tools;
+        skills_frameworks_title.innerHTML = data_langs.french.skills.skills_frameworks_title;
+        skills_frameworks.innerHTML = data_langs.french.skills.skills_frameworks;
+        skills_soft_skills_title.innerHTML = data_langs.french.skills.skills_soft_skills_title;
+        skills_soft_skills.innerHTML = data_langs.french.skills.skills_soft_skills;
         skills_spoken_languages_title.innerHTML = data_langs.french.skills.skills_spoken_languages_title;
         skills_spoken_languages.innerHTML = data_langs.french.skills.skills_spoken_languages;
+
 
         //contact section
         contact_title.innerHTML = data_langs.french.contact.contact_title;
@@ -181,7 +188,7 @@ function changeLanguage() {
         role.innerHTML = data_langs.english.role;
         description_about_1.innerHTML = data_langs.english.description_about_1;
         description_about_2.innerHTML = data_langs.english.description_about_2;
-        image_description.innerHTML = data_langs.english.img_description;
+        //image_description.innerHTML = data_langs.english.img_description;
         //projects section
         project_general_title.innerHTML = data_langs.english.project_general_title;
         //projects_titles_link.innerHTML = data.english.projects_titles_link;
@@ -245,13 +252,16 @@ function changeLanguage() {
         //skills section
         skills_title.innerHTML = data_langs.english.skills.skills_title;
         skills_languages_title.innerHTML = data_langs.english.skills.skills_languages_title;
-        skills_game_engines_title.innerHTML = data_langs.english.skills.skills_game_engines_title;
-        skills_tools_title.innerHTML = data_langs.english.skills.skills_tools_title;
-        skills_spoken_languages_title.innerHTML = data_langs.english.skills.skills_spoken_languages_title;
         skills_languages.innerHTML = data_langs.english.skills.skills_languages;
-        skills_game_engines.innerHTML = data_langs.english.skills.skills_engines;
+        skills_tools_title.innerHTML = data_langs.english.skills.skills_tools_title;
         skills_tools.innerHTML = data_langs.english.skills.skills_tools;
+        skills_frameworks_title.innerHTML = data_langs.english.skills.skills_frameworks_title;
+        skills_frameworks.innerHTML = data_langs.english.skills.skills_frameworks;
+        skills_soft_skills_title.innerHTML = data_langs.english.skills.skills_soft_skills_title;
+        skills_soft_skills.innerHTML = data_langs.english.skills.skills_soft_skills;
+        skills_spoken_languages_title.innerHTML = data_langs.english.skills.skills_spoken_languages_title;
         skills_spoken_languages.innerHTML = data_langs.english.skills.skills_spoken_languages;
+
 
         //contact section
         contact_title.innerHTML = data_langs.english.contact.contact_title;
@@ -268,7 +278,7 @@ let data_langs = {
         role: "Gameplay, UI & AI Programmer",
         description_about_1: "I'm a game programming student passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, I also have experience with <strong>Unity</strong> and <strong>C#</strong>.",
         description_about_2: "Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to contribute to a team where <strong> collaboration</strong>, <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish meaningful things. I believe these values are key when facing challenges and building great games.",
-        img_description: "ㆍProblem-Solving ㆍTeamwork ㆍCommunication",
+        //img_description: "ㆍProblem-Solving ㆍTeamwork ㆍCommunication",
         //projects section
         project_general_title: "Projects",
         projects_titles_link: "View on Itch.io",
@@ -343,11 +353,13 @@ let data_langs = {
         skills: {
             skills_title: "Skills",
             skills_languages_title: "Languages:",
-            skills_languages: "C++, C#, JavaScript, Blueprints, HTML, CSS.",
-            skills_game_engines_title: "Game Engines:",
-            skills_engines: "Unreal Engine, Unity.",
+            skills_languages: "C++, C#, JavaScript, Java, HTML, CSS, SQL, Blueprints (Unreal Engine).",
             skills_tools_title: "Tools:",
-            skills_tools: "Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.",
+            skills_tools: "Rider, VS Code, Visual Studio Community, Git, GitHub, Perforce, Trello, Google Workspace.",
+            skills_frameworks_title: "Frameworks:",
+            skills_frameworks: "Unreal Engine 5, Unity, Three.js, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
+            skills_soft_skills_title: "Soft Skills:",
+            skills_soft_skills: "Time Management, Team Collaboration, Adaptability, Ownership, Clear Communication, Organization.",
             skills_spoken_languages_title: "Spoken Languages:",
             skills_spoken_languages: "French, English and Spanish."
         },
@@ -368,7 +380,7 @@ let data_langs = {
         role: "Programmeur gameplay, IU et IA",
         description_about_1: "Je suis un étudiant en programmation de jeux passionné par les systèmes de <strong>gameplay</strong>, d'<strong>IU</strong> et d'<strong>IA</strong>. Je me spécialise dans <strong>Unreal Engine 5</strong> en utilisant <strong>Blueprints</strong> et <strong>C++</strong>, j'ai également de l'expérience avec <strong>Unity</strong> et <strong>C#</strong>.",
         description_about_2: "Actuellement à la recherche d'un <strong>stage d'été 2026,</strong> je suis impatient de contribuer à une équipe où <strong>la collaboration</strong>, <strong>la communication</strong>, <strong>la discipline</strong> et <strong>la responsabilité</strong> permettent d'accomplir des choses significatives. Je crois que ces valeurs sont essentielles pour relever des défis et créer de grands jeux.",
-        img_description: "ㆍSolution de problèmes ㆍTravail d'équipe ㆍCommunication",
+        //img_description: "ㆍSolution de problèmes ㆍTravail d'équipe ㆍCommunication",
 
         //projects section
         project_general_title: "Projets",
@@ -441,13 +453,20 @@ let data_langs = {
 
         //skills section
         skills: {
+
             skills_title: "Compétences",
             skills_languages_title: "Langages:",
-            skills_languages: "C++, C#, JavaScript, Blueprints, HTML, CSS.",
-            skills_game_engines_title: "Moteurs de jeu:",
-            skills_engines: "Unreal Engine, Unity.",
+            skills_languages: "C++, C#, JavaScript, Java, HTML, CSS, SQL, Blueprints (Unreal Engine).",
+
             skills_tools_title: "Outils:",
-            skills_tools: "Perforce, JetBrains Rider, GitHub, Git, VS Code, Visual Studio Community, IntelliJ.",
+            skills_tools: "Rider, VS Code, Visual Studio Community, Git, GitHub, Perforce, Trello, Google Workspace.",
+
+            skills_frameworks_title: "Cadre:",
+            skills_frameworks: "Unreal Engine 5, Unity, Three.js, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
+            skills_soft_skills_title: "Compétences relationnelles :",
+            skills_soft_skills: "Gestion du temps, collaboration en équipe, adaptabilité, sens des responsabilités, communication claire, organisation.",
+
+
             skills_spoken_languages_title: "Langues parlées:",
             skills_spoken_languages: "Français, Anglais et Espagnol."
         },
