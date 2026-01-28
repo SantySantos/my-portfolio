@@ -107,8 +107,22 @@
           player while its falling, while at the same time having different types of obstacles with different speeds and  
           spawn rates. To achieve this, I created a cannon that everytime it shots, it randomly changes positions
           around a circular path where the player is the center, allowing it to move closer and farther away. 
-          
 
+          <br>
+          <br>
+
+          The next step was to make the obstacles intercept the player no matter where it was on the screen. To do this, 
+          I implemented a system using pytagoras theorem to calculate the distance between the cannon and the player,
+          and then using that distance to calculate the time it would take for the obstacle to reach the player based on its speed.
+          With that time, I calculated the velocity vector needed for the obstacle to reach the player in that time,
+          allowing it to always intercept the player no matter where it was.
+
+          <br>
+          <br>
+
+          Stems from nothing was a great experience where I got a chance to improve my skills as a gameplay programmer while
+          touching math concepts such as trigonometry and vectors to achieve the desired gameplay with a 
+          relievable system.
 
         </p>
       </div>
