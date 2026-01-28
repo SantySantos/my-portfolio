@@ -406,6 +406,13 @@ body {
   font-weight: 600;
 }
 
+#main-video {
+  border: 2px solid white;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
 .video-description-grid {
   margin-top: -10px;
   display: block;
