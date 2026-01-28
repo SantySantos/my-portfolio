@@ -357,7 +357,7 @@ let data_langs = {
             skills_tools_title: "Tools:",
             skills_tools: "Rider, VS Code, Visual Studio Community, Git, GitHub, Perforce, Trello, Google Workspace.",
             skills_frameworks_title: "Frameworks:",
-            skills_frameworks: "Unreal Engine 5, Unity, Three.js, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
+            skills_frameworks: "Unreal Engine 5, Unity, Three.js, Maya, Blender, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
             skills_soft_skills_title: "Soft Skills:",
             skills_soft_skills: "Time Management, Team Collaboration, Adaptability, Ownership, Clear Communication, Organization.",
             skills_spoken_languages_title: "Spoken Languages:",
@@ -462,7 +462,7 @@ let data_langs = {
             skills_tools: "Rider, VS Code, Visual Studio Community, Git, GitHub, Perforce, Trello, Google Workspace.",
 
             skills_frameworks_title: "Cadre:",
-            skills_frameworks: "Unreal Engine 5, Unity, Three.js, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
+            skills_frameworks: "Unreal Engine 5, Unity, Three.js, Maya, Blender, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
             skills_soft_skills_title: "Compétences relationnelles :",
             skills_soft_skills: "Gestion du temps, collaboration en équipe, adaptabilité, sens des responsabilités, communication claire, organisation.",
 
