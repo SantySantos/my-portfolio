@@ -398,6 +398,15 @@ body {
   margin: auto;
 }
 
+.personal-experience {
+  border: 2px solid white;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0 20px 0;
+  padding: 24px 32px;
+}
+
 
 .video-title {
   padding-top: 10px;

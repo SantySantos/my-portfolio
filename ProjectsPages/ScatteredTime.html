@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PermanentMarker:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/png" href="Assets/icon.png">
+  <link rel="icon" type="image/png" href="../Assets/icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -91,7 +91,63 @@
           </p>
         </div>
 
-        <a href="../index.html" style="color: white; text-decoration: none;">
+        
+
+      </div>
+
+      <div class="personal-experience">
+          <h1>My Experience</h1>
+          <p class="experience-text" style="font-size: 20px;">
+           
+            For this 1-month project and my final submission for my game engine II class, I took the roles as both AI Programmer and Game Designer.
+            
+            <br>
+            <br>
+
+            Once the theme of the game was announced, all I could think of was about coming back in time, a paradox that cannot be broken, one of my main inspirations was the game: "Exit 8".
+            From there is that the idea of "Scattered Time" was born.
+
+            <br>
+            <br>
+            The first mechanic that we worried about was the time loop while keeping the theme alive, how could we make the player go back in time? Well, if you are in a paradox, time is broken,
+            so we decided to make the player, and everything else in the world, restart to its initial position every minute, exactly back to square one. After we dicided to go with this mechanic, 
+            we ralized that we couldn't make the player do the same things again every minute. So we thought about a setting that 
+            made the player take a different decision every time they come back in time, but still making what they did before relevant. That's when the idea of a Maze came up.
+            
+           
+            <br>
+            <br>
+
+            I am passionate about making things work and move by its own, and thats why my role during this game focused on the AI programming side, making the robots and the security cameras work as intended. 
+            The cameras were the first thing I worked on, making them rotate and detect the player when they came into vision, it was a fun challenge to start with, and  I learned a lot about line traces, vectors, rotators, and animations, specially when
+            things such as pivot points and offsets came into play when animating cameras. It helped me understand more how important its to think forward when working on something, that in this case, the camera itself and the base of it 
+            would be a good thing to have as separate meshes to make the rotation easier, but I undestood that there are always many ways to solve a problem when programming, and at the same time I learned how important it is to think ahead when working on something.
+
+            <br>
+            <br>
+
+            When I started working on the robots AI, I was starting to touch an area of coding I didn't have much experience with: Behaviour Trees, AI Controllers, Blackboards, and more. It was challenging at first, specially understand
+            how these things worked together and how decicions by AI were taken, but after watching some tutorials and reading documentations, I started to understand how these things truly worked. Mainly, Sequence and Selector nodes
+            were the base of the beahviours tree, a sequence will take the next accion once the first (the one at the left) is completed, while a selector will take the next accion once the first one fails. As well as that a decarators control whether an accion can be executed or not based on certain parameters (very similar to if-statements)
+            This is some of the base knowledge I
+            understood and applied it to one of the robots systems: patrolling. Mainly, the robot will have a hashmap with different patrol points and a time where they must remain at each point. I created a BTT that will run over and over, just adjung the current patrol 
+            point and making the robot move to it, wait the time, and then go to the next point, but this BTT is placed all the way at the right side of my BT, which means that if any other accion can be taken, the robot will take that one instead, in my case, chase the player.
+            I mainly used two decorators to check this: if the variable "Player" is set in the blackboard, it means the player is detected by the robot and so it will chase, else it means the player is not detected and so it will patrol, but if the player is out of range, the robot will forget the 
+            player and continue to the next patrol point saved.
+
+            <br>
+            <br>
+
+            Throughout this project, I was surprised about all the things AI systems can do in Unreal Engine 5. On the other hand, I also understood how players perceive a world they don't fully understand once they start a game for the first time and how 
+            they can adapt while still offering a place challenging to the player. I am very proud with Scattered Time and what I was able to achieve with it. 
+            
+
+
+          </p>
+      </div>
+
+
+      <a href="../index.html" style="color: white; text-decoration: none;">
           <div class="game-card-links">
             <h4><i class="fa-solid fa-arrow-left"></i> Go Back</h4>
           </div>
@@ -104,7 +160,6 @@
           </div>
         </a>
 
-      </div>
     </div>
 
   </main>

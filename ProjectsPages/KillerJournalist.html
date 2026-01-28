@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PermanentMarker:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/png" href="Assets/icon.png">
+  <link rel="icon" type="image/png" href="../Assets/icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -91,12 +91,42 @@
             <i class="fa-solid fa-pencil"></i> <strong>Theme:</strong> Mask
           </p>
         </div>
-            
-        <div>
-          <h2>My Experience</h2>
-        </div>
+      </div> 
 
-      
+      <div class="personal-experience">
+          <h1>My Experience</h1>
+          <p class="experience-text" style="font-size: 20px;">
+            During this Game Jam, I focused on UI Programming and Gameplay Programming, where my main focus was to assure that our game was of high-quality for such a short period of time.
+
+            <br>
+            <br>
+
+            At the beggining of the Jam, I worked closely with the game designer and programmers to find a way to succesfully implement the core mechanic of the game, which consisted of taking pictures having the blue objects on the screen,
+            while the red objects must be out of the frame. For this approach, we decided to go with raycast to determine if from the point of view of the player and the blue objects,  there was an intercepting object in between, and we checked the opposite for the red objects. if so the picture would not count.
+
+            <br>
+            <br>
+
+            The problem with the last approach was that sometimes the raycasts wouldnt work because it came from the center of the object, and we wanted scenarios where even if it was a tiny part of the object, it would still count as being in the frame.
+            To solve this issue, we decided to cast multiple raycasts at the same time covering the whole screen, even though it was more performance heavy, we could add an animation that would simulate an old camera taking a picture, 
+            which would cover the screen for a fraction of a second, allowing us to cast all the raycasts during that time without the player noticing. In this way, we made sure that even if one of the raycats drew a line with no object in betweem, 
+            it would count and the player would move to the next room.
+
+            <br>
+            <br>
+
+            Moving on with UI, it was more strainghtforward, I worked with the artist to get the general idea of the aesthethic we wanted for the game, and I implemented all the menus, HUDS, and pop-ups that were needed for the game. Such as the notepad, 
+            where the player could see the objectives and clues they had found during their investigation. 
+            
+            <br>
+            <br>
+
+            Overall, I am very satisfied with the final result of our game, I feel communication was key during this jam, and working next to each other with the team made everything easier, clear and putted everyone on the same page.
+
+          </p>
+      </div>
+
+      <div>
         <a href="../index.html" style="color: white; text-decoration: none;">
           <div class="game-card-links">
             <h4><i class="fa-solid fa-arrow-left"></i> Go Back</h4>
@@ -111,7 +141,7 @@
         </a>
       </div>
 
-
+        
     </div>
 
   </main>
