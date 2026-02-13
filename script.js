@@ -74,7 +74,7 @@ let skills_tools_title = document.querySelector('.skills-tools-title');
 let skills_frameworks_title = document.querySelector('.skills-frameworks-title');
 let skills_soft_skills_title = document.querySelector('.skills-soft-skills-title');
 let skills_spoken_languages_title = document.querySelector('.skills-spoken-languages-title');
-    
+
 let skills_languages = document.querySelector('.skills-languages');
 let skills_tools = document.querySelector('.skills-tools');
 let skills_frameworks = document.querySelector('.skills-frameworks');
@@ -99,7 +99,7 @@ function changeLanguage() {
         role.innerHTML = data_langs.french.role;
         description_about_1.innerHTML = data_langs.french.description_about_1;
         description_about_2.innerHTML = data_langs.french.description_about_2;
-       // image_description.innerHTML = data_langs.french.img_description;
+        // image_description.innerHTML = data_langs.french.img_description;
         //projects section
         project_general_title.innerHTML = data_langs.french.project_general_title;
         //projects_titles_link.innerHTML = data.french.projects_titles_link;
@@ -145,7 +145,7 @@ function changeLanguage() {
         project_card_role_6.innerHTML = data_langs.french.solar_system_simulation.project_card_role_6;
         project_card_description_6.innerHTML = data_langs.french.solar_system_simulation.project_card_description_6;
         project_card_intro_6.innerHTML = data_langs.french.solar_system_simulation.project_card_intro_6;
-        
+
         //Living Gun
         project_card_title_7.innerHTML = data_langs.french.living_gun.project_card_title_7;
         project_card_info_7.innerHTML = data_langs.french.living_gun.project_card_info_7;
@@ -556,6 +556,11 @@ function goToProjects(webpage, id) {
         case 'killer_journalist':
             window.location.href = webpage;
             break;
+
+        case 'the_cycle':
+            window.killer_journalist.href = webpage;
+            break;
+
         case 'self_reflection':
             window.location.href = webpage;
             break;
