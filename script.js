@@ -18,6 +18,14 @@ let project_card_role_1 = document.querySelector('.game-role-t1');
 let project_card_description_1 = document.querySelector('.game-description-t1');
 let project_card_intro_1 = document.querySelector('.game-intro-t1');
 
+//The Cycle
+let project_card_title_cycle = document.querySelector('.t-cycle');
+let project_card_info_cycle = document.querySelector('.game-info-tcycle');
+let project_card_role_cycle = document.querySelector('.game-role-tcycle');
+let project_card_description_cycle = document.querySelector('.game-description-tcycle');
+let project_card_intro_cycle = document.querySelector('.game-intro-tcycle');
+
+
 //Self Reflection
 let project_card_title_2 = document.querySelector('.t-2');
 let project_card_info_2 = document.querySelector('.game-info-t2');
@@ -111,6 +119,16 @@ function changeLanguage() {
         project_card_description_1.innerHTML = data_langs.french.killer_journalist.project_card_description_1;
         project_card_intro_1.innerHTML = data_langs.french.killer_journalist.project_card_intro_1;
 
+
+        //The Cycle
+        project_card_title_cycle.innerHTML = data_langs.french.the_cycle.project_card_title_cycle;
+        project_card_info_cycle.innerHTML = data_langs.french.the_cycle.project_card_info_cycle;
+        project_card_role_cycle.innerHTML = data_langs.french.the_cycle.project_card_role_cycle;
+        project_card_description_cycle.innerHTML = data_langs.french.the_cycle.project_card_description_cycle;
+        project_card_intro_cycle.innerHTML = data_langs.french.the_cycle.project_card_intro_cycle;
+    
+
+
         //self reflection
         project_card_title_2.innerHTML = data_langs.french.self_reflection.project_card_title_2;
         project_card_info_2.innerHTML = data_langs.french.self_reflection.project_card_info_2;
@@ -199,6 +217,14 @@ function changeLanguage() {
         project_card_role_1.innerHTML = data_langs.english.killer_journalist.project_card_role_1;
         project_card_description_1.innerHTML = data_langs.english.killer_journalist.project_card_description_1;
         project_card_intro_1.innerHTML = data_langs.english.killer_journalist.project_card_intro_1;
+
+        //The Cycle
+        project_card_title_cycle.innerHTML = data_langs.english.the_cycle.project_card_title_cycle;
+        project_card_info_cycle.innerHTML = data_langs.english.the_cycle.project_card_info_cycle;
+        project_card_role_cycle.innerHTML = data_langs.english.the_cycle.project_card_role_cycle;
+        project_card_description_cycle.innerHTML = data_langs.english.the_cycle.project_card_description_cycle;
+        project_card_intro_cycle.innerHTML = data_langs.english.the_cycle.project_card_intro_cycle;
+
 
         //self reflection
         project_card_title_2.innerHTML = data_langs.english.self_reflection.project_card_title_2;
@@ -289,6 +315,14 @@ let data_langs = {
             project_card_role_1: "Gameplay and UI Programmer",
             project_card_description_1: "Built in <strong> 48 hours,</strong> Killer Journalist was created in a team of<strong>7 members</strong> with the theme <strong> 'Mask' </strong> at The Indie Asylum in Montreal.",
             project_card_intro_1: " <strong>Killer Journalist </strong> is a narrative puzzle game where the main character is a journalist investigating the case of a dissapeared high profile citizen. The player must mask the truth hidden in the crime scene while discovering the secrets behind the case.",
+        },
+        
+        the_cycle: {
+            project_card_title_cycle: "The Cycle",
+            project_card_info_cycle: "<strong>McGameJam 2026 - Best Gameplay Design Winner</strong>",
+            project_card_role_cycle: "AI Programmer, Sound Designer and Generalist",
+            project_card_description_cycle: "Built in <strong> 42 hours,</strong> The Cycle was created in a team of<strong>8 members</strong> with the theme <strong>'The Hunt'</strong> at the McGill University in Montreal.",
+            project_card_intro_cycle: "<strong>The Cycle </strong> is a 3D narrative adventure game that takes place in a snowy ecosystem. The player is an owl who hunts for prey to survive the harsh winter. As an owl, you must use your natural instincts to catch your prey off guard, until it is time to face a harsh reality."
         },
 
         self_reflection: {
@@ -395,6 +429,14 @@ let data_langs = {
             project_card_intro_1: "<strong> Killer Journalist </strong> est un jeu narratif et énigmatique dont le personnage principal est un journaliste enquêtant sur la disparition d'un citoyen influent. Le joueur doit dissimuler la vérité cachée sur la scène du crime tout en découvrant les secrets qui se cachent derrière cette affaire.",
         },
 
+        the_cycle: {
+            project_card_title_cycle: "The Cycle",
+            project_card_info_cycle: "<strong>McGameJam 2026 - Meilleur design de gameplay</strong>",
+            project_card_role_cycle: "Programmeur IA, Sound Designer et Generalist",
+            project_card_description_cycle: "Créé en <strong>42 heures,</strong> The Cycle a été développé par une équipe de <strong>8 membres</strong> sur le thème <strong>'La Chasse'</strong> à l'Université McGill à Montréal.",
+            project_card_intro_cycle: "<strong>The Cycle </strong> est un jeu d'aventure narratif en 3D qui se déroule dans un écosystème enneigé. Le joueur incarne un hibou qui chasse ses proies pour survivre à l'hiver rigoureux. En tant que hibou, vous devez utiliser votre instinct naturel pour prendre vos proies au dépourvu, jusqu'à ce que vous deviez affronter une dure réalité."
+        },
+        
         self_reflection: {
             project_card_title_2: "Self Reflection",
             project_card_info_2: "<strong>3ème place au 2025 Behaviour Interactive Game Jam</strong>",
@@ -550,6 +592,17 @@ let data_projects = {
 
 let projects_video = document.getElementById('main-video');
 
+
+document.querySelectorAll('.project-card').forEach(card => {
+    const video = card.querySelector('video');
+    if (!video) return;
+    card.addEventListener('mouseenter', () => video.play().catch(() => {}));
+    card.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
+
 function goToProjects(webpage, id) {
 
     switch (id) {
@@ -558,7 +611,7 @@ function goToProjects(webpage, id) {
             break;
 
         case 'the_cycle':
-            window.killer_journalist.href = webpage;
+            window.location.href = webpage;
             break;
 
         case 'self_reflection':

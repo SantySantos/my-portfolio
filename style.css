@@ -287,7 +287,15 @@ body {
   border-radius: 60px;
   border: 2px solid rgba(255, 255, 255, 0.04);
 }
+/*
+.project-card video {
 
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+*/
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.02);
   background-color: transparent;

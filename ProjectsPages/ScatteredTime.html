@@ -126,9 +126,9 @@
           were the first thing I worked on, making them rotate and detect the player when they came into view. It was a
           fun challenge to start with, and I learned a lot about line traces, vectors, rotators, and animations,
           especially when things such as pivot points and offsets came into play when animating cameras. It helped me
-          understand more how important its to think forward when working on something, that in this case, the camera
+          It helped me understand more how important it is to think ahead when working on something, that in this case, the camera
           itself and the base of it would be a good thing to have as separate meshes to make the rotation easier, but I
-          undestood that there are always many ways to solve a problem when programming, and at the same time I learned
+          understood that there are always many ways to solve a problem when programming, and at the same time I learned
           how important it is to think ahead when working on something.
 
           <br>
@@ -143,7 +143,7 @@
           As well as that, decorators control whether an action can be executed or not based on certain parameters (very
           similar to if-statements). This is some of the base knowledge I understood and applied it to the robots
           systems: patrolling. Mainly, the robot will have a HashMap with different patrol points and a time where it
-          must remain at each point. I created a BTT that will run overand over, just adjung the current patrol point
+          must remain at each point. I created a BTT that will run over and over, just adjusting the current patrol point
           and making the robot move to it, wait the time, and then go to the next point, but this BTT is placed all the
           way at the right side of my BT, which means that if any other action can be taken, the robot will take that
           one instead, in my case, chase the player. I mainly used two decorators to check this: if the variable
