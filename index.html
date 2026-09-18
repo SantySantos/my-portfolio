@@ -61,6 +61,8 @@
     </nav>
   </header>
 
+  <div class="cursor-glow"></div>
+
   <main>
     <!--About-->
     <section id="about" class="section about container about-container">
@@ -69,12 +71,12 @@
           <h2 class="name-about">Santiago Santos</h2>
 
           <h4 class="role-about">Gameplay, UI & AI Programmer</h4>
-          <p class="description-about da-1 ">I'm a game programming student passionate about <strong> gameplay</strong>,
+          <p class="description-about da-1 ">I'm a game developer passionate about <strong> gameplay</strong>,
             <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using
             <strong>Blueprints</strong> and <strong>C++</strong>,
             I also have experience with <strong>Unity</strong> and <strong>C#</strong>.
           </p>
-          <p class="description-about da-2">Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to
+          <p class="description-about da-2">Currently seeking a <strong>new grad position</strong>, I'm eager to
             contribute to a team where <strong> collaboration</strong>,
             <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish
             meaningful things. I believe these values are key when facing challenges and building great games.
@@ -89,22 +91,85 @@
       </div>
     </section>
 
+
+    <!--Experience-->
+    <section id="experience" class="section experience container">
+      <h2 class="general-title">Experience</h2>
+
+      <div class="projects-grid">
+
+        <article class="card project-card">
+
+          <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
+          <div class="card-body" onclick="window.open('https://www.infirnaa.ca/', '_blank');">
+            <h3 class="project-card-title-exp">Game Developer • INFIRNAA </h3>
+            <p class="game-info-exp">
+              <strong>Internship | Montreal, QC | May 2026 - August 2026</strong>
+            </p>
+
+            <ul class="game-description-exp">
+              <li>Owned inventory, save/load, pickup, and interaction systems for a nursing simulation in UE5. </li>
+              <li>Optimized the interaction system's performance by consolidating redundant per-frame, cutting
+                interaction costs by 80%. </li>
+              <li>Architected the system ausing design patterns to remove 10+ hard dependencies between gameplay
+                systems.</li>
+            </ul>
+
+            <p class="game-role-exp"> <span class="container-fluid-tag">Unreal Engine 5 | C++ | Blueprint | Perforce |
+                Trello</span></p>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
     <!--Projects-->
     <section id="projects" class="section projects container">
       <h2 class="general-title">Projects</h2>
 
-      <!--Killer Journalist-->
 
       <div class="projects-grid">
+        <!--Sentiment-->
         <article class="card project-card">
+           <img onclick="goToProjects('ProjectsPages/Sentiment.html', 'sentiment')"
+            src="images/games/Sentiment.png" alt="Project 1" style="width:100%; height:auto;">
+          <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
+          <div class="card-body" onclick="goToProjects('ProjectsPages/KillerJournalist.html', 'killer_journalist')">
+            <h3 class="project-card-title t-1">Sentiment<span class="container-fluid-tag"> Unreal Engine
+                5 | Perforce </span></h3>
+            <p class="game-info-t1">
+              <strong>Best Audio & Participant's Pick Winner in the 2026 Behaviour Interactive Game Jam
+              </strong>
+            </p>
+
+            <p class="game-role-t1">Gameplay, UI & Audio Programmer</p>
+            <p class="game-description-t1">
+              Built in less than <strong> 3 days,</strong> Sentiment was created in a team of
+              <strong>8 members</strong> with the theme <strong>'You Are Not Alone'</strong>
+              at Behaviour Interactive Studios based in Montreal.
+            </p>
+            <p class="game-intro-t1">
+
+              <strong>Sentiment </strong> is a psychological horror game that delves with themes of a dysfunctional family. 
+              You play as a little boy trying to take control of a situation that is beyond his control.
+            </p>
+            <a class="card-link t-link"><i class="fa-solid fa-arrow-right go-to-project-icon"></i></a>
+          </div>
+        </article>
+
+        <!--Killer Journalist-->
+        <article class="card project-card">
+           <img onclick="goToProjects('ProjectsPages/KillerJournalist.html', 'killer_journalist')"
+            src="images/games/KillerJournalist.png" alt="Project 1" style="width:100%; height:auto;">
+          <!--
           <video onclick="goToProjects('ProjectsPages/KillerJournalist.html', 'killer_journalist')" loop autoplay muted
-            src="videos/Killer Journalist - OfficialTrailer VFinal.mp4" alt="Project 1"></video>
+            src="videos/Killer Journalist - OfficialTrailer VFinal.mp4" alt="Project 1"></video>-->
           <!--<img src="images/templatepictureporfolio.jpg" alt="Project 3" />-->
           <div class="card-body" onclick="goToProjects('ProjectsPages/KillerJournalist.html', 'killer_journalist')">
             <h3 class="project-card-title t-1">Killer Journalist<span class="container-fluid-tag"> Unreal Engine
-                5</span></h3>
+                5 | Perforce </span></h3>
             <p class="game-info-t1">
-              <strong>MGD Game Jam 2025 - 1st Place Winner & Best Art
+              <strong>MGD Game Jam 2025 - 1st Place Winner & Best Art 
               </strong>
             </p>
 
@@ -127,15 +192,15 @@
 
 
 
-    <!--The Cycle-->
-       
+        <!--The Cycle-->
+
         <article class="card project-card">
-          <img onclick="goToProjects('ProjectsPages/TheCycle.html', 'the_cycle')"
-            src="images/games/TheCycle.png" alt="Project 1" style="width:100%; height:auto;">
-         
+          <img onclick="goToProjects('ProjectsPages/TheCycle.html', 'the_cycle')" src="images/games/TheCycle.png"
+            alt="Project 1" style="width:100%; height:auto;">
+
           <div class="card-body" onclick="goToProjects('ProjectsPages/TheCycle.html', 'the_cycle')">
             <h3 class="project-card-title t-cycle">The Cycle<span class="container-fluid-tag"> Unreal Engine
-                5</span></h3>
+                5 | Perforce </span></h3>
             <p class="game-info-tcycle">
               <strong>McGameJam 2026 - Best Gameplay Design Winner
               </strong>
@@ -145,7 +210,7 @@
             <p class="game-description-tcycle">
               Built in <strong> 42 hours,</strong> The Cycle was created in a team of
               <strong>8 members</strong> with the theme <strong>'The Hunt'</strong>
-              at the McGill University in Montreal. 
+              at the McGill University in Montreal.
             </p>
             <p class="game-intro-tcycle">
 
@@ -154,11 +219,11 @@
               As an owl, you must use your natural instincts to catch your prey off guard, until it is time
               to face a harsh reality.
             </p>
-           <a href="ProjectsPages/TheCycle.html" class="card-link t-link"><i
+            <a href="ProjectsPages/TheCycle.html" class="card-link t-link"><i
                 class="fa-solid fa-arrow-right go-to-project-icon"></i></a>
           </div>
-        </article>   
-      
+        </article>
+
 
         <!--Self Reflection-->
         <article class="card project-card">
@@ -176,7 +241,7 @@
           <div class="card-body" onclick="goToProjects('ProjectsPages/SelfReflection.html', 'self_reflection')">
             <h3 class="project-card-title t-2">Self Reflection
 
-              <span class="container-fluid-tag"> Unreal Engine 5
+              <span class="container-fluid-tag"> Unreal Engine 5 | Perforce
               </span>
             </h3>
 
@@ -205,7 +270,7 @@
           <video onclick="goToProjects('ProjectsPages/ScatteredTime.html', 'scattered_time')" loop autoplay muted
             src="videos/ScatteredTime.mp4" alt="Project 1"></video>
           <div class="card-body" onclick="goToProjects('ProjectsPages/ScatteredTime.html', 'scattered_time')">
-            <h3 class="project-card-title t-3">Scattered Time <span class="container-fluid-tag"> Unreal Engine 5</span>
+            <h3 class="project-card-title t-3">Scattered Time <span class="container-fluid-tag"> Unreal Engine 5 | Perforce</span>
             </h3>
             <p class="game-info-t3">
               <strong>4th Semester Final Project | 3rd Place Winner School Game Jam
@@ -234,7 +299,7 @@
             src="videos/StemsFromNothing.mp4" alt="Project 1"></video>
           <div class="card-body" onclick="goToProjects('ProjectsPages/StemsFromNothing.html', 'stems_from_nothing')">
             <h3 class="project-card-title t-4">Stems From Nothing <span class="container-fluid-tag"> Unreal Engine
-                5</span></h3>
+                5 | Perforce</span></h3>
             <p class="game-info-t4">
               <strong>A submission for the Creative Jam 25th edition</strong>
             </p>
@@ -263,7 +328,7 @@
           <img onclick="goToProjects('ProjectsPages/LavenderBiome.html', 'lavender_biome')"
             src="images/games/LavenderBiome.png" alt="Project 1" style="width:100%; height:auto;">
           <div class="card-body" onclick="goToProjects('ProjectsPages/LavenderBiome.html', 'lavender_biome')">
-            <h3 class="project-card-title t-5">Lavender Biome <span class="container-fluid-tag"> A Minecraft Mod /
+            <h3 class="project-card-title t-5">Lavender Biome <span class="container-fluid-tag"> A Minecraft Mod |
                 Java</span></h3>
             <p class="game-info-t5">
               <strong>A project using Design Patterns and OOP in a real, working systems </strong>
@@ -292,8 +357,7 @@
           <img onclick="goToProjects('ProjectsPages/SolarSystem.html', 'solar_system_simulation')" loop autoplay muted
             src="images/games/SolarSystemSimulation.png" alt="Project 1" style="width: 100; height: auto;">
           <div class="card-body" onclick="goToProjects('ProjectsPages/SolarSystem.html', 'solar_system_simulation')">
-            <h3 class="project-card-title t-6">Solar System Simulation <span class="container-fluid-tag"> ThreeJS /
-                WebGL</span></h3>
+            <h3 class="project-card-title t-6">Solar System Simulation <span class="container-fluid-tag"> ThreeJS | GitHub </span></h3>
             <p class="game-info-t6">
               <strong>A project to practice JavaScript, Math, 3D graphics programming, and asset loading in
                 Three.js</strong>
@@ -324,7 +388,7 @@
           <img onclick="goToProjects('ProjectsPages/LivingGun.html', 'living_gun')" loop autoplay muted
             src="images/games/LivingGun.png" alt="Project 1" style="width:100%; height:auto;">
           <div class="card-body" onclick="goToProjects('ProjectsPages/LivingGun.html', 'living_gun')">
-            <h3 class="project-card-title t-7">Living Gun <span class="container-fluid-tag"> Unity / C#</span></h3>
+            <h3 class="project-card-title t-7">Living Gun <span class="container-fluid-tag"> Unity | C# | GitHub</span></h3>
             <p class="game-info-t7">
               <strong>Top 3 most popular games in a Game Jam with over 1,700+ entries</strong>
             </p>
@@ -358,8 +422,8 @@
         <article class="card project-card">
           <div class="card-body">
             <h3 class="education-place">Collège LaSalle - Montreal, QC</h3>
-            <p class="education-degree">Diploma of College Studies (DEC) in Game Programming</p>
-            <p class="education-date">August 2023 - Present</p>
+            <p class="education-degree">Diploma of College Studies (DCS) in Game Programming</p>
+            <p class="education-date">August 2023 - August 2026</p>
 
           </div>
         </article>
@@ -374,7 +438,6 @@
             </div>
           </article>
           -->
-
         <br>
         <br>
     </section>

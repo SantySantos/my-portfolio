@@ -605,7 +605,18 @@ document.querySelectorAll('.project-card').forEach(card => {
 
 function goToProjects(webpage, id) {
 
+    const clickEvent = window.event;
+    if (clickEvent) {
+        sessionStorage.setItem('vt-x', (clickEvent.clientX / window.innerWidth) * 100);
+        sessionStorage.setItem('vt-y', (clickEvent.clientY / window.innerHeight) * 100);
+    }
+
     switch (id) {
+
+        case 'sentiment':
+            window.location.href = webpage;
+            break;
+            
         case 'killer_journalist':
             window.location.href = webpage;
             break;
@@ -636,5 +647,15 @@ function goToProjects(webpage, id) {
             window.location.href = webpage;
             break;
     }
+
+
 }
+
+const cursorGlow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', (e) => {
+
+        cursorGlow.style.left = `${e.clientX}px`;
+        cursorGlow.style.top = `${e.clientY}px`;
+});
 

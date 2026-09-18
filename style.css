@@ -28,6 +28,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.cursor-glow{
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(4, 219, 183, 0.5) 0%, transparent 80%);
+  filter: blur(100px);
+  z-index: -1;
+  mix-blend-mode: screen;
+}
+
 .home-button {
   position: absolute;
   top: 1rem;
@@ -352,8 +364,19 @@ body {
   object-fit: cover
 }
 
+
 .card-body {
   padding: 1rem
+}
+
+
+.game-description-exp {
+  margin: 0 0 1rem 0;
+  padding-left: 1.1rem;
+}
+
+.game-description-exp li {
+  margin-bottom: 0.4rem;
 }
 
 .card-link {
@@ -498,8 +521,28 @@ body {
   font-size: 3rem;
   font-weight: 600;
 }
+/*
+@view-transition 
+{ 
+  navigation: auto; 
+}
 
+::view-transition-old(root) {
+  animation: none;
+}
+
+::view-transition-new(root) {
+  animation: circle-in 500ms ease-in-out;
+}
+
+
+@keyframes circle-in{
+
+  from {clip-path: circle(0% at 50% 50%);}
+  to {clip-path: circle(120% at 50% 50%);}
+}
 /*tablet*/
+
 @media(max-width:900px) {
 
   .projects-grid {
