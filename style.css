@@ -208,6 +208,106 @@ body {
   height: 48px;
 }
 
+.side-panel-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1999;
+}
+
+.side-panel-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  max-width: 85vw;
+  background: #0f1113;
+  border-right: 1px solid rgba(102, 255, 204, 0.2);
+  box-shadow: 2px 0 24px rgba(0, 0, 0, 0.5);
+  padding: 2rem 1.5rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.side-panel.open {
+  transform: translateX(0);
+}
+
+.side-panel-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #66ffcc;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.side-panel-title {
+  color: #66ffcc;
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem;
+  font-weight: 700;
+}
+
+.side-panel-group {
+  margin-bottom: 1.75rem;
+}
+
+.side-panel-group h4 {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+}
+
+.side-panel-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-panel-group li {
+  margin-bottom: 0.35rem;
+}
+
+.side-panel-group a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.side-panel-group a:hover {
+  background: rgba(102, 255, 204, 0.1);
+  color: #66ffcc;
+}
+
+@media (max-width: 640px) {
+  .side-panel {
+    width: 260px;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
 .hero {
   position: relative;
   /* Ensure hero fits the viewport and leaves room for the header */

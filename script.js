@@ -653,9 +653,103 @@ function goToProjects(webpage, id) {
 
 const cursorGlow = document.querySelector('.cursor-glow');
 
-document.addEventListener('mousemove', (e) => {
+if (cursorGlow) {
+    document.addEventListener('mousemove', (e) => {
 
         cursorGlow.style.left = `${e.clientX}px`;
         cursorGlow.style.top = `${e.clientY}px`;
-});
+    });
+}
+
+// ----- Side navigation panel -----
+(function () {
+    const sections = [
+        { id: 'about', label: 'About' },
+        { id: 'experience', label: 'Experience' },
+        { id: 'projects', label: 'Projects' },
+        { id: 'education', label: 'Education' },
+        { id: 'skills', label: 'Skills' },
+        { id: 'contact', label: 'Contact' },
+    ];
+
+    const projectPages = [
+        { file: 'Sentiment.html', label: 'Sentiment' },
+        { file: 'KillerJournalist.html', label: 'Killer Journalist' },
+        { file: 'TheCycle.html', label: 'The Cycle' },
+        { file: 'SelfReflection.html', label: 'Self Reflection' },
+        { file: 'ScatteredTime.html', label: 'Scattered Time' },
+        { file: 'StemsFromNothing.html', label: 'Stems From Nothing' },
+        { file: 'LavenderBiome.html', label: 'Lavender Biome' },
+        { file: 'SolarSystem.html', label: 'Solar System Simulation' },
+        { file: 'LivingGun.html', label: 'Living Gun' },
+    ];
+
+    const onProjectSubpage = /ProjectsPages/i.test(window.location.pathname);
+    const indexPath = onProjectSubpage ? '../index.html' : 'index.html';
+    const projectsBasePath = onProjectSubpage ? '' : 'ProjectsPages/';
+
+    const overlay = document.createElement('div');
+    overlay.className = 'side-panel-overlay';
+    overlay.id = 'side-panel-overlay';
+
+    const panel = document.createElement('aside');
+    panel.className = 'side-panel';
+    panel.id = 'side-panel';
+
+    const sectionLinks = sections.map(s =>
+        `<li><a href="${indexPath}#${s.id}" data-section="${s.id}">${s.label}</a></li>`
+    ).join('');
+
+    const projectLinks = projectPages.map(p =>
+        `<li><a href="${projectsBasePath}${p.file}">${p.label}</a></li>`
+    ).join('');
+
+    panel.innerHTML = `
+        <button class="side-panel-close" aria-label="Close menu">&times;</button>
+        <h3 class="side-panel-title">Go To</h3>
+        <div class="side-panel-group">
+            <h4>Sections</h4>
+            <ul>${sectionLinks}</ul>
+        </div>
+        <div class="side-panel-group">
+            <h4>Projects</h4>
+            <ul>${projectLinks}</ul>
+        </div>
+    `;
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(panel);
+
+    function closeSidePanel() {
+        panel.classList.remove('open');
+        overlay.classList.remove('open');
+    }
+
+    function openSidePanel() {
+        panel.classList.add('open');
+        overlay.classList.add('open');
+    }
+
+    window.openSidePanel = openSidePanel;
+    window.closeSidePanel = closeSidePanel;
+
+    overlay.addEventListener('click', closeSidePanel);
+    panel.querySelector('.side-panel-close').addEventListener('click', closeSidePanel);
+
+    panel.addEventListener('click', (e) => {
+        const link = e.target.closest('a[data-section]');
+        if (link && !onProjectSubpage) {
+            const target = document.getElementById(link.dataset.section);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        if (e.target.closest('a')) closeSidePanel();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeSidePanel();
+    });
+})();
 
