@@ -438,6 +438,44 @@ body {
   margin-top: 1.25rem
 }
 
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.filter-chip {
+  background: transparent;
+  color: #66ffcc;
+  border: 1px solid #66ffcc;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filter-chip:hover {
+  background: rgba(102, 255, 204, 0.1);
+}
+
+.filter-chip.active {
+  background: #66ffcc;
+  color: #0d1117;
+}
+
+.chip-count {
+  margin-left: 0.45rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.project-card.is-filtered-out {
+  display: none;
+}
+
 .project-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   border: 2px solid rgb(190, 190, 190);

@@ -7,9 +7,17 @@ let description_about_1 = document.querySelector('.da-1');
 let description_about_2 = document.querySelector('.da-2');
 
 //projects section
-let project_general_title = document.querySelector('.general-title');
+let project_general_title = document.querySelector('#projects .general-title');
+let experience_title = document.querySelector('#experience .general-title');
 let image_description = document.querySelector('.img-description');
 //let projects_titles_link = document.querySelector('.t-link');
+
+//Sentiment
+let project_card_title_sentiment = document.querySelector('.t-sentiment');
+let project_card_info_sentiment = document.querySelector('.game-info-tsentiment');
+let project_card_role_sentiment = document.querySelector('.game-role-tsentiment');
+let project_card_description_sentiment = document.querySelector('.game-description-tsentiment');
+let project_card_intro_sentiment = document.querySelector('.game-intro-tsentiment');
 
 //Killer Journalist
 let project_card_title_1 = document.querySelector('.t-1');
@@ -88,6 +96,8 @@ let skills_tools = document.querySelector('.skills-tools');
 let skills_frameworks = document.querySelector('.skills-frameworks');
 let skills_soft_skills = document.querySelector('.skills-soft-skills');
 let skills_spoken_languages = document.querySelector('.skills-spoken-languages');
+let skills_software_title = document.querySelector('.skills-software-title');
+let skills_software = document.querySelector('.skills-software');
 
 //contact section
 let contact_title = document.querySelector('.contact-title');
@@ -110,7 +120,15 @@ function changeLanguage() {
         // image_description.innerHTML = data_langs.french.img_description;
         //projects section
         project_general_title.innerHTML = data_langs.french.project_general_title;
+        experience_title.innerHTML = data_langs.french.experience_title;
         //projects_titles_link.innerHTML = data.french.projects_titles_link;
+
+        //Sentiment
+        project_card_title_sentiment.innerHTML = data_langs.french.sentiment.project_card_title_sentiment;
+        project_card_info_sentiment.innerHTML = data_langs.french.sentiment.project_card_info_sentiment;
+        project_card_role_sentiment.innerHTML = data_langs.french.sentiment.project_card_role_sentiment;
+        project_card_description_sentiment.innerHTML = data_langs.french.sentiment.project_card_description_sentiment;
+        project_card_intro_sentiment.innerHTML = data_langs.french.sentiment.project_card_intro_sentiment;
 
         //Killer Journalist
         project_card_title_1.innerHTML = data_langs.french.killer_journalist.project_card_title_1;
@@ -189,6 +207,9 @@ function changeLanguage() {
         skills_soft_skills.innerHTML = data_langs.french.skills.skills_soft_skills;
         skills_spoken_languages_title.innerHTML = data_langs.french.skills.skills_spoken_languages_title;
         skills_spoken_languages.innerHTML = data_langs.french.skills.skills_spoken_languages;
+        skills_software_title.innerHTML = data_langs.french.skills.skills_software_title;
+        skills_software.innerHTML = data_langs.french.skills.skills_software;
+        setFilterLabels(data_langs.french.filters);
 
 
         //contact section
@@ -209,7 +230,15 @@ function changeLanguage() {
         //image_description.innerHTML = data_langs.english.img_description;
         //projects section
         project_general_title.innerHTML = data_langs.english.project_general_title;
+        experience_title.innerHTML = data_langs.english.experience_title;
         //projects_titles_link.innerHTML = data.english.projects_titles_link;
+
+        //Sentiment
+        project_card_title_sentiment.innerHTML = data_langs.english.sentiment.project_card_title_sentiment;
+        project_card_info_sentiment.innerHTML = data_langs.english.sentiment.project_card_info_sentiment;
+        project_card_role_sentiment.innerHTML = data_langs.english.sentiment.project_card_role_sentiment;
+        project_card_description_sentiment.innerHTML = data_langs.english.sentiment.project_card_description_sentiment;
+        project_card_intro_sentiment.innerHTML = data_langs.english.sentiment.project_card_intro_sentiment;
 
         //Killer Journalist
         project_card_title_1.innerHTML = data_langs.english.killer_journalist.project_card_title_1;
@@ -287,6 +316,9 @@ function changeLanguage() {
         skills_soft_skills.innerHTML = data_langs.english.skills.skills_soft_skills;
         skills_spoken_languages_title.innerHTML = data_langs.english.skills.skills_spoken_languages_title;
         skills_spoken_languages.innerHTML = data_langs.english.skills.skills_spoken_languages;
+        skills_software_title.innerHTML = data_langs.english.skills.skills_software_title;
+        skills_software.innerHTML = data_langs.english.skills.skills_software;
+        setFilterLabels(data_langs.english.filters);
 
 
         //contact section
@@ -302,55 +334,64 @@ let data_langs = {
     {
         //about section
         role: "Gameplay, UI & AI Programmer",
-        description_about_1: "I'm a game programming student passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, I also have experience with <strong>Unity</strong> and <strong>C#</strong>.",
-        description_about_2: "Currently seeking a <strong>Summer 2026 internship,</strong> I'm eager to contribute to a team where <strong> collaboration</strong>, <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish meaningful things. I believe these values are key when facing challenges and building great games.",
+        description_about_1: "I'm a game developer passionate about <strong> gameplay</strong>, <strong>UI</strong>, and <strong>AI</strong> systems. I specialize in <strong>Unreal Engine 5</strong> using <strong>Blueprints</strong> and <strong>C++</strong>, I also have experience with <strong>Unity</strong> and <strong>C#</strong>.",
+        description_about_2: "Currently seeking a <strong>new grad position</strong>, I'm eager to contribute to a team where <strong> collaboration</strong>, <strong>communication</strong>, <strong>discipline</strong>, and <strong>ownership</strong> accomplish meaningful things. I believe these values are key when facing challenges and building great games.",
         //img_description: "ㆍProblem-Solving ㆍTeamwork ㆍCommunication",
         //projects section
         project_general_title: "Projects",
+        experience_title: "Experience",
         projects_titles_link: "View on Itch.io",
 
+        sentiment: {
+            project_card_title_sentiment: "Sentiment<span class='container-fluid-tag'> Unreal Engine 5 | Perforce </span>",
+            project_card_info_sentiment: "<strong>Best Audio & Participant's Pick Winner in the 2026 Behaviour Interactive Game Jam</strong>",
+            project_card_role_sentiment: "Gameplay, UI & Audio Programmer",
+            project_card_description_sentiment: "Built in less than <strong> 3 days,</strong> Sentiment was created in a team of <strong>8 members</strong> with the theme <strong>'You Are Not Alone'</strong> at Behaviour Interactive Studios based in Montreal.",
+            project_card_intro_sentiment: "<strong>Sentiment </strong> is a psychological horror game that delves with themes of a dysfunctional family. You play as a little boy trying to take control of a situation that is beyond his control.",
+        },
+
         killer_journalist: {
-            project_card_title_1: "Killer Journalist",
+            project_card_title_1: "Killer Journalist<span class='container-fluid-tag'> Unreal Engine 5 | Perforce </span>",
             project_card_info_1: "<strong>MGD Game Jam 2025 - 1st Place Winner & Best Art</strong>",
             project_card_role_1: "Gameplay and UI Programmer",
-            project_card_description_1: "Built in <strong> 48 hours,</strong> Killer Journalist was created in a team of<strong>7 members</strong> with the theme <strong> 'Mask' </strong> at The Indie Asylum in Montreal.",
-            project_card_intro_1: " <strong>Killer Journalist </strong> is a narrative puzzle game where the main character is a journalist investigating the case of a dissapeared high profile citizen. The player must mask the truth hidden in the crime scene while discovering the secrets behind the case.",
+            project_card_description_1: "Built in <strong> 48 hours,</strong> Killer Journalist was created in a team of <strong>7 members</strong> with the theme <strong>'Mask'</strong> at The Indie Asylum in Montreal.",
+            project_card_intro_1: "<strong>Killer Journalist </strong> is a narrative puzzle game where the main character is a journalist investigating the case of a disappeared high-profile citizen. The player must mask the truth hidden in the crime scene while discovering the secrets behind the case.",
         },
         
         the_cycle: {
-            project_card_title_cycle: "The Cycle",
+            project_card_title_cycle: "The Cycle<span class='container-fluid-tag'> Unreal Engine 5 | Perforce </span>",
             project_card_info_cycle: "<strong>McGameJam 2026 - Best Gameplay Design Winner</strong>",
             project_card_role_cycle: "AI Programmer, Sound Designer and Generalist",
-            project_card_description_cycle: "Built in <strong> 42 hours,</strong> The Cycle was created in a team of<strong>8 members</strong> with the theme <strong>'The Hunt'</strong> at the McGill University in Montreal.",
+            project_card_description_cycle: "Built in <strong> 42 hours,</strong> The Cycle was created in a team of <strong>8 members</strong> with the theme <strong>'The Hunt'</strong> at the McGill University in Montreal.",
             project_card_intro_cycle: "<strong>The Cycle </strong> is a 3D narrative adventure game that takes place in a snowy ecosystem. The player is an owl who hunts for prey to survive the harsh winter. As an owl, you must use your natural instincts to catch your prey off guard, until it is time to face a harsh reality."
         },
 
         self_reflection: {
-            project_card_title_2: "Self Reflection",
+            project_card_title_2: "Self Reflection <span class='container-fluid-tag'> Unreal Engine 5 | Perforce</span>",
             project_card_info_2: "<strong>3rd Place Winner in the 2025 Behaviour Interactive Game Jam</strong>",
             project_card_role_2: "Gameplay and UI Programmer",
-            project_card_description_2: " Built in <strong>under 48 hours,</strong> Self Reflection was created in a team of <strong>7 members</strong> with the theme <strong> 'If you can't see it, it doesn't exist!'</strong> at the Behaviour Interactive Studios based In Montreal.",
+            project_card_description_2: "Built in <strong>under 48 hours,</strong> Self Reflection was created in a team of <strong>7 members</strong> with the theme <strong>'If you can't see it, it doesn't exist!'</strong> at the Behaviour Interactive Studios based in Montreal.",
             project_card_intro_2: "<strong>Self Reflection</strong> is a game where the protagonist is a depressed man trying to go through his day, but as he keeps going, he needs to find himself through mirrors in order to stay grounded and not lose himself."
         },
 
         scattered_time: {
-            project_card_title_3: "Scattered Time",
+            project_card_title_3: "Scattered Time <span class='container-fluid-tag'> Unreal Engine 5 | Perforce</span>",
             project_card_info_3: "<strong>4th Semester Final Project | 3rd Place Winner School Game Jam</strong>",
             project_card_role_3: "AI Programmer and Level Designer",
             project_card_description_3: "Built in <strong> 1 month,</strong> Scattered Time was created in a team of only <strong>3 members</strong> with the theme <strong>'Back to Square One'</strong> at Collège LaSalle in Montreal.",
-            project_card_intro_3: "<strong>Scattered Time </strong> takes place in a maze where everything goes back in time every 60 seconds.The player needs to discover its secrets, collect items to unlock new areas, and find the 8 portal shards to fix time and escape the loop."
+            project_card_intro_3: "<strong>Scattered Time </strong> takes place in a maze where everything goes back in time every 60 seconds. The player needs to discover its secrets, collect items to unlock new areas, and find the 8 portal shards to fix time and escape the loop."
         },
 
         stems_from_nothing: {
-            project_card_title_4: "Stems From Nothing",
-            project_card_info_4: "<strong>Une soumission pour la 25e édition du Creative Jam</strong>",
+            project_card_title_4: "Stems From Nothing <span class='container-fluid-tag'> Unreal Engine 5 | Perforce</span>",
+            project_card_info_4: "<strong>A submission for the Creative Jam 25th edition</strong>",
             project_card_role_4: "Gameplay Programmer",
             project_card_description_4: "Built in <strong> under 46 hours,</strong> Stems From Nothing was created in a team of <strong>9 members</strong> with the theme <strong>'Start from nothing'</strong> at NAD School located in Montreal.",
-            project_card_intro_4: "<strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter mind to be able to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical constraints of: a maximum 5 colors, one level only and one button only.",
+            project_card_intro_4: "<strong>Stems From Nothing</strong> is a game where the player must navigate in a songwriter's mind to be able to compose the music while avoiding mental block obstacles. Stems From Nothing meets the technical constraints of: a maximum of 5 colors, one level only and one button only.",
         },
 
         lavender_biome: {
-            project_card_title_5: "Lavender Biome",
+            project_card_title_5: "Lavender Biome <span class='container-fluid-tag'> A Minecraft Mod | Java</span>",
             project_card_info_5: "<strong>A project using Design Patterns and OOP in a real, working systems </strong>",
             project_card_role_5: "Programmer",
             project_card_description_5: "Built as a<strong> learning-focused</strong> project, this Minecraft mod was developed to explore and apply <strong>Design Patterns</strong> within an existing codebase for my Advanced Databases class.",
@@ -358,7 +399,7 @@ let data_langs = {
         },
 
         solar_system_simulation: {
-            project_card_title_6: "Solar System Simulation",
+            project_card_title_6: "Solar System Simulation <span class='container-fluid-tag'> ThreeJS | GitHub </span>",
             project_card_info_6: "<strong>A project to practice JavaScript, Math, 3D graphics programming, and asset loading in Three.js</strong>",
             project_card_role_6: "Programmer",
             project_card_description_6: "Built as a <strong>learning-focused</strong> project, this solar system simulation was developed to explore and apply <strong>Math modeling, and real-time rendering with ThreeJS and CSS </strong>.",
@@ -366,8 +407,8 @@ let data_langs = {
         },
 
         living_gun: {
-            project_card_title_7: "Living Gun",
-            project_card_info_7: "<strong>Top 3 rows most popular games in a Game Jam with over 1.700+ entries</strong>",
+            project_card_title_7: "Living Gun <span class='container-fluid-tag'> Unity | C# | GitHub</span>",
+            project_card_info_7: "<strong>Top 3 most popular games in a Game Jam with over 1,700+ entries</strong>",
             project_card_role_7: "AI and Gameplay Programmer",
             project_card_description_7: "Built during a <strong>2-week-long</strong> online Game Jam, Living Gun was made in a team of <strong>5 members </strong> with the theme of <strong>'You Are the Weapon'</strong>.",
             project_card_intro_7: "<strong>Living Gun</strong> is a <strong>2D shooter game</strong> where the player is a weapon that transforms into <strong>4 different guns</strong>, each with unique characteristics and firing modes. The player must strategically switch between guns to defeat <strong>the bosses</strong> in each level and <strong>upgrade the guns</strong>. ",
@@ -379,32 +420,41 @@ let data_langs = {
         education: {
             education_title: "Education",
             education_place: "Collège LaSalle - Montreal, QC",
-            education_degree: "Diploma of College Studies (DEC) in Game Programming",
-            education_date: "August 2023 - Present",
+            education_degree: "Diploma of College Studies (DCS) in Game Programming",
+            education_date: "August 2023 - August 2026",
         },
 
         //skills section
         skills: {
             skills_title: "Skills",
-            skills_languages_title: "Languages:",
+            skills_languages_title: "<strong>Languages: </strong>",
             skills_languages: "C++, C#, JavaScript, Java, HTML, CSS, SQL, Blueprints (Unreal Engine).",
-            skills_tools_title: "Tools:",
+            skills_tools_title: "<strong>Tools: </strong>",
             skills_tools: "Rider, VS Code, Visual Studio Community, Git, GitHub, Perforce, Trello, Google Workspace.",
-            skills_frameworks_title: "Frameworks:",
+            skills_frameworks_title: "<strong>Frameworks: </strong>",
             skills_frameworks: "Unreal Engine 5, Unity, Three.js, Maya, Blender, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
-            skills_soft_skills_title: "Soft Skills:",
+            skills_soft_skills_title: "<strong>Soft Skills: </strong>",
             skills_soft_skills: "Time Management, Team Collaboration, Adaptability, Ownership, Clear Communication, Organization.",
-            skills_spoken_languages_title: "Spoken Languages:",
-            skills_spoken_languages: "French, English and Spanish."
+            skills_spoken_languages_title: "<strong>Spoken Languages: </strong>",
+            skills_spoken_languages: "French, English and Spanish.",
+            skills_software_title: "<strong>Software Engineering: </strong>",
+            skills_software: "Object-Oriented Programming, Design Patterns, Performance Optimization, Debugging, Version Control (Git, Perforce), Relational Databases, Responsive Web Development."
+        },
+
+        filters: {
+            all: "All",
+            jam: "Game Jams",
+            unreal: "Unreal Engine 5",
+            software: "Software & Web"
         },
 
 
         //contact section
         contact: {
             contact_title: "Contact Me!",
-            email: "Email",
-            phone: "Phone",
-            linkedIn: "Let's Connect!"
+            email: "<i class='fa-solid fa-envelope'></i> Email",
+            phone: "<i class='fa-solid fa-phone'></i> Phone",
+            linkedIn: "<i class='fa-brands fa-linkedin'></i> Let's Connect!"
         }
 
     },
@@ -412,17 +462,26 @@ let data_langs = {
     {
         //about section
         role: "Programmeur gameplay, IU et IA",
-        description_about_1: "Je suis un étudiant en programmation de jeux passionné par les systèmes de <strong>gameplay</strong>, d'<strong>IU</strong> et d'<strong>IA</strong>. Je me spécialise dans <strong>Unreal Engine 5</strong> en utilisant <strong>Blueprints</strong> et <strong>C++</strong>, j'ai également de l'expérience avec <strong>Unity</strong> et <strong>C#</strong>.",
-        description_about_2: "Actuellement à la recherche d'un <strong>stage d'été 2026,</strong> je suis impatient de contribuer à une équipe où <strong>la collaboration</strong>, <strong>la communication</strong>, <strong>la discipline</strong> et <strong>la responsabilité</strong> permettent d'accomplir des choses significatives. Je crois que ces valeurs sont essentielles pour relever des défis et créer de grands jeux.",
+        description_about_1: "Je suis un développeur de jeux passionné par les systèmes de <strong>gameplay</strong>, d'<strong>IU</strong> et d'<strong>IA</strong>. Je me spécialise dans <strong>Unreal Engine 5</strong> en utilisant <strong>Blueprints</strong> et <strong>C++</strong>, j'ai également de l'expérience avec <strong>Unity</strong> et <strong>C#</strong>.",
+        description_about_2: "Actuellement à la recherche d'un <strong>poste pour nouveau diplômé</strong>, je suis impatient de contribuer à une équipe où <strong>la collaboration</strong>, <strong>la communication</strong>, <strong>la discipline</strong> et <strong>la responsabilité</strong> permettent d'accomplir des choses significatives. Je crois que ces valeurs sont essentielles pour relever des défis et créer de grands jeux.",
         //img_description: "ㆍSolution de problèmes ㆍTravail d'équipe ㆍCommunication",
 
         //projects section
         project_general_title: "Projets",
+        experience_title: "Expérience",
         projects_titles_link: "Revoir sur Itch.io",
+
+        sentiment: {
+            project_card_title_sentiment: "Sentiment<span class='container-fluid-tag'> Unreal Engine 5 | Perforce </span>",
+            project_card_info_sentiment: "<strong>Meilleur audio et Choix des participants au Behaviour Interactive Game Jam 2026</strong>",
+            project_card_role_sentiment: "Programmeur gameplay, IU et audio",
+            project_card_description_sentiment: "Créé en <strong>moins de 3 jours,</strong> Sentiment a été développé par une équipe de <strong>8 membres</strong> sur le thème <strong>'Vous n'êtes pas seul'</strong> aux studios Behaviour Interactive basés à Montréal.",
+            project_card_intro_sentiment: "<strong>Sentiment</strong> est un jeu d'horreur psychologique qui aborde les thèmes d'une famille dysfonctionnelle. Vous incarnez un petit garçon qui tente de reprendre le contrôle d'une situation qui le dépasse.",
+        },
 
         //Killer Journalist
         killer_journalist: {
-            project_card_title_1: "Killer Journalist",
+            project_card_title_1: "Killer Journalist<span class='container-fluid-tag'> Unreal Engine 5 | Perforce </span>",
             project_card_info_1: "<strong>MGD Game Jam 2025 - 1ère place et meilleur art</strong>",
             project_card_role_1: "Programmeur gameplay et IU",
             project_card_description_1: "Créé en <strong>48 heures,</strong> Killer Journalist a été développé par une équipe de <strong>7 membres</strong> sur le thème <strong>'Masque'</strong> à The Indie Asylum à Montréal.",
@@ -430,7 +489,7 @@ let data_langs = {
         },
 
         the_cycle: {
-            project_card_title_cycle: "The Cycle",
+            project_card_title_cycle: "The Cycle<span class='container-fluid-tag'> Unreal Engine 5 | Perforce </span>",
             project_card_info_cycle: "<strong>McGameJam 2026 - Meilleur design de gameplay</strong>",
             project_card_role_cycle: "Programmeur IA, Sound Designer et Generalist",
             project_card_description_cycle: "Créé en <strong>42 heures,</strong> The Cycle a été développé par une équipe de <strong>8 membres</strong> sur le thème <strong>'La Chasse'</strong> à l'Université McGill à Montréal.",
@@ -438,7 +497,7 @@ let data_langs = {
         },
         
         self_reflection: {
-            project_card_title_2: "Self Reflection",
+            project_card_title_2: "Self Reflection <span class='container-fluid-tag'> Unreal Engine 5 | Perforce</span>",
             project_card_info_2: "<strong>3ème place au 2025 Behaviour Interactive Game Jam</strong>",
             project_card_role_2: "Programmeur gameplay et IU",
             project_card_description_2: " Créé en <strong>moins de 48 heures,</strong> Self Reflection a été développé par une équipe de <strong>7 membres</strong> sur le thème <strong> 'Si vous ne pouvez pas le voir, cela n'existe pas!'</strong> aux studios Behaviour Interactive basés à Montréal.",
@@ -446,7 +505,7 @@ let data_langs = {
         },
 
         scattered_time: {
-            project_card_title_3: "Scattered Time",
+            project_card_title_3: "Scattered Time <span class='container-fluid-tag'> Unreal Engine 5 | Perforce</span>",
             project_card_info_3: "<strong>Projet final du 4e semestre | 3e place au School Game Jam</strong>",
             project_card_role_3: "Programmeur IA et concepteur de niveaux",
             project_card_description_3: "Créé en <strong>1 mois,</strong> Scattered Time a été développé par une équipe de seulement <strong>3 membres</strong> sur le thème <strong>'Retour à la case départ'</strong> au Collège LaSalle à Montréal.",
@@ -454,15 +513,15 @@ let data_langs = {
         },
 
         stems_from_nothing: {
-            project_card_title_4: "Stems From Nothing",
+            project_card_title_4: "Stems From Nothing <span class='container-fluid-tag'> Unreal Engine 5 | Perforce</span>",
             project_card_info_4: "<strong>Une soumission pour la 25e édition du Creative Jam</strong>",
-            project_card_role_4: "Programmeur",
+            project_card_role_4: "Programmeur gameplay",
             project_card_description_4: "Créé en <strong>moins de 46 heures,</strong> Stems From Nothing a été développé par une équipe de <strong>9 membres</strong> sur le thème <strong>'Partir de rien'</strong> à l'école NAD située à Montréal.",
             project_card_intro_4: "<strong>Stems From Nothing</strong> est un jeu dans lequel le joueur doit naviguer dans l'esprit d'un compositeur afin de pouvoir composer de la musique tout en évitant les obstacles liés au blocage mental. Stems From Nothing répond aux contraintes techniques suivantes : 5 couleurs maximum, un seul niveau et un seul bouton.",
         },
 
         lavender_biome: {
-            project_card_title_5: "Biome Lavande",
+            project_card_title_5: "Biome Lavande <span class='container-fluid-tag'> Un mod Minecraft | Java</span>",
             project_card_info_5: "<strong>Un projet utilisant les Design Patterns et la POO dans des systèmes réels et fonctionnels </strong>",
             project_card_role_5: "Programmeur",
             project_card_description_5: "Construit comme un projet <strong>axé sur l'apprentissage</strong>, ce mod Minecraft a été développé pour explorer et appliquer les <strong>Design Patterns</strong> dans une base de code existante pour mon cours de bases de données avancées.",
@@ -470,7 +529,7 @@ let data_langs = {
         },
 
         solar_system_simulation: {
-            project_card_title_6: "Simulation du Système Solaire",
+            project_card_title_6: "Simulation du Système Solaire <span class='container-fluid-tag'> ThreeJS | GitHub </span>",
             project_card_info_6: "<strong>Un projet pour pratiquer JavaScript, les mathématiques, la programmation graphique 3D et le chargement d'actifs dans Three.js</strong>",
             project_card_role_6: "Programmeur",
             project_card_description_6: "Construit comme un projet <strong>axé sur l'apprentissage</strong>, cette simulation du système solaire a été développée pour explorer et appliquer la <strong>modélisation mathématique et le rendu en temps réel avec ThreeJS et CSS</strong>.",
@@ -478,9 +537,9 @@ let data_langs = {
         },
 
         living_gun: {
-            project_card_title_7: "Living Gun",
-            project_card_info_7: "<strong>Top 3 des jeux les plus populaires dans un Game Jam avec plus de 1.700 entrées</strong>",
-            project_card_role_7: "IA et Programmeur",
+            project_card_title_7: "Living Gun <span class='container-fluid-tag'> Unity | C# | GitHub</span>",
+            project_card_info_7: "<strong>Top 3 des jeux les plus populaires dans un Game Jam avec plus de 1 700 participations</strong>",
+            project_card_role_7: "Programmeur IA et gameplay",
             project_card_description_7: "Construit lors d'un Game Jam en ligne de <strong>2 semaines</strong>, Living Gun a été réalisé en équipe de <strong>5 membres</strong> avec pour thème <strong>'You Are the Weapon'</strong>.",
             project_card_intro_7: "<strong>Living Gun</strong> est un <strong>jeu de tir 2D</strong> où le joueur est une arme qui se transforme en <strong>4 armes différentes</strong>, chacune avec des caractéristiques et des modes de tir uniques. Le joueur doit changer stratégiquement d'armes pour vaincre <strong>les boss</strong> de chaque niveau et <strong>améliorer les armes</strong>. ",
         },
@@ -490,35 +549,44 @@ let data_langs = {
             education_title: "Éducation",
             education_place: "Collège LaSalle - Montreal, QC",
             education_degree: "Diplôme d'études collégiales (DEC) en programmation de jeux vidéo",
-            education_date: "Août 2023 - Présent",
+            education_date: "Août 2023 - Août 2026",
         },
 
         //skills section
         skills: {
 
             skills_title: "Compétences",
-            skills_languages_title: "Langages:",
+            skills_languages_title: "<strong>Langages: </strong>",
             skills_languages: "C++, C#, JavaScript, Java, HTML, CSS, SQL, Blueprints (Unreal Engine).",
 
-            skills_tools_title: "Outils:",
+            skills_tools_title: "<strong>Outils: </strong>",
             skills_tools: "Rider, VS Code, Visual Studio Community, Git, GitHub, Perforce, Trello, Google Workspace.",
 
-            skills_frameworks_title: "Cadre:",
+            skills_frameworks_title: "<strong>Cadre: </strong>",
             skills_frameworks: "Unreal Engine 5, Unity, Three.js, Maya, Blender, Fabric (Minecraft Modding), JSON Files, Microsoft Excel.",
-            skills_soft_skills_title: "Compétences relationnelles :",
+            skills_soft_skills_title: "<strong>Compétences relationnelles: </strong>",
             skills_soft_skills: "Gestion du temps, collaboration en équipe, adaptabilité, sens des responsabilités, communication claire, organisation.",
 
 
-            skills_spoken_languages_title: "Langues parlées:",
-            skills_spoken_languages: "Français, Anglais et Espagnol."
+            skills_spoken_languages_title: "<strong>Langues parlées: </strong>",
+            skills_spoken_languages: "Français, Anglais et Espagnol.",
+            skills_software_title: "<strong>Génie logiciel: </strong>",
+            skills_software: "Programmation orientée objet, patrons de conception, optimisation des performances, débogage, gestion de versions (Git, Perforce), bases de données relationnelles, développement web adaptatif."
+        },
+
+        filters: {
+            all: "Tous",
+            jam: "Game Jams",
+            unreal: "Unreal Engine 5",
+            software: "Logiciel & Web"
         },
 
         //contact section
         contact: {
             contact_title: "Contactez-moi!",
-            email: "Courriel",
-            phone: "Téléphone",
-            linkedIn: "Restons en Contact!"
+            email: "<i class='fa-solid fa-envelope'></i> Courriel",
+            phone: "<i class='fa-solid fa-phone'></i> Téléphone",
+            linkedIn: "<i class='fa-brands fa-linkedin'></i> Restons en Contact!"
         }
     },
 };
@@ -750,6 +818,42 @@ if (cursorGlow) {
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeSidePanel();
+    });
+})();
+
+// ----- Project filters -----
+function setFilterLabels(labels) {
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.querySelector('.chip-label').textContent = labels[chip.dataset.filter];
+    });
+}
+
+(function () {
+    const chips = document.querySelectorAll('.filter-chip');
+    const cards = [...document.querySelectorAll('#projects .project-card')];
+    const matches = (card, filter) => filter === 'all' || card.dataset.tags.split(' ').includes(filter);
+
+    chips.forEach(chip => {
+        const filter = chip.dataset.filter;
+        chip.querySelector('.chip-count').textContent = cards.filter(card => matches(card, filter)).length;
+
+        chip.addEventListener('click', () => {
+            chips.forEach(c => {
+                c.classList.toggle('active', c === chip);
+                c.setAttribute('aria-pressed', c === chip);
+            });
+
+            cards.forEach(card => {
+                const show = matches(card, filter);
+                card.classList.toggle('is-filtered-out', !show);
+                if (show) {
+                    // force a reflow so the fade-in transition replays
+                    card.classList.remove('reveal');
+                    void card.offsetWidth;
+                    card.classList.add('reveal');
+                }
+            });
+        });
     });
 })();
 
